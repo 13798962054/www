@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>studio d A1</title>
+	<!--    支持手机端自适应-->
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+	<div id="word">
+		<select name="page" onchange="showWord(this)"> 
+			<option value="11">Seite 11</option> 
+			<option value="12">Seite 12</option> 
+			<option value="13">Seite 13</option> 
+			<option value="14">Seite 14</option> 
+		</select> 
+		<select name="pageWord" onchange="search(this)"> 
+			<option value="wie">wie</option> 
+			<option value="heißen">heißen</option> 
+			<option value="der">der</option> 
+			<option value="in">in</option> 
+			<option value="Ihr">Ihr</option> 
+			<option value="Sprache">Sprache</option> 
+			<option value="Ton">Ton</option> 
+			<option value="aus">aus</option> 
+			<option value="wo">wo</option> 
+			<option value="ist">ist</option> 
+			<option value="kennen">kennen</option> 
+			<option value="Sprecher">Sprecher</option> 
+			<option value="kommen">kommen</option> 
+		</select>
+		<input type="text" placeholder="durchsuchen" onchange="search(this)">
+	</div>
+	
+	
+	<div id="dict">
+		<iframe src="https://www.godic.net/dicts/de/wie" scrolling="no" width="100%" height="2000px" ></iframe>
+	</div>
+</body>
+
+
+<script type="text/javascript">
+	
+	function search(str){
+		document.getElementsByTagName("iframe")[0].src = "https://www.godic.net/dicts/de/" + str.value
+	}
+
+	var word = 	[
+					["wie", "heißen", "der", "in", "Ihr", "Sprache", "Ton", "aus", "wo", "ist", "kennen", "Sprecher", "kommen"],
+					["im", "Dialog", "Guten Tag", "ich", "bin", "Frau", "Deutschlehrer", "Lehrer", "Hallo", "mein", "woher", "wer", "Herr", "er"],
+					["Frage", "Antwort", "nachsprechen", "Partnerinterview", "Partner", "fragen", "notieren", "berichten", "lesen", "wohnen", "jetzt", "auch", "zuordnen"],
+					["Personalangabe", "ein", "die Person", "die Aufgabe", "ergänzen", "Redemittelkasten", "Redemittel", "mit", "Begrüßung", "Vorstellung", "Rap", "mitmachen", "Gruppe"]
+				]
+
+	function showWord(obj){
+	    var content = "";
+		index = obj.value - 11
+
+        for(var i = 0;i<word[0].length;i++){
+            content = content + "<option value='" + word[index][i] + "'>" + word[index][i] + "</option>";
+        }
+	        
+	    document.getElementsByName("pageWord")[0].innerHTML = content;
+	}
+
+</script>
+</html>

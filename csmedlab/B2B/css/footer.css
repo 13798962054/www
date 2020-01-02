@@ -1,0 +1,96 @@
+/*地图*/
+#map{
+    width: 100%;
+    height: 300px;
+}
+#map-container {
+    width: 100%;
+    height: 100%;
+}
+.marker {
+    color: #ff6600;
+    padding: 4px 10px;
+    border: 1px solid #fff;
+    white-space: nowrap;
+    font-size: 7px;
+    background-color: #0066ff;
+}
+
+/*footer .connect-us{*/
+/*    padding-left: 200px;*/
+/*}*/
+
+footer{
+    margin-top: 50px;
+}
+
+footer .connect-us table{
+    margin: 0 auto;
+}
+
+footer .connect-us tr td{
+    padding: 10px 8px;
+}
+
+footer .wechat-text{
+    font-size: 28px;
+    padding: 10px 0;
+    color: #1F74C8;
+}
+
+footer .wechat-icon img{
+    width: 200px;
+    height: 200px;
+}
+
+/* footer-bottom样式 */
+#footer-bottom{
+    width: 70%;
+    margin:0 auto -18px;
+    text-align: center;
+    line-height: 2em;
+}
+
+#footer-bottom .footer-line{
+    width: 100%;
+    height: 25px;
+
+    background: -webkit-linear-gradient(to bottom,rgba(0,0,0,.14),rgba(0,0,0,.03) 3px,transparent);
+    background: linear-gradient(to bottom,rgba(0,0,0,.14),rgba(0,0,0,.03) 3px,transparent);
+    z-index: 0;
+    zoom: 1;
+}
+#footer-bottom .footer-line:before {
+    content: "";
+    position: absolute;
+    background-image: -webkit-linear-gradient(to left,#fff,rgba(255,255,255,0),#999);
+    background-image: linear-gradient(to left,#fff,rgba(255,255,255,0),#999);
+    left: 50%;
+    right: 0%;
+    height: 1px;
+    z-index: 1;
+}
+#footer-bottom .footer-line:after {
+    content: "";
+    position: absolute;
+    background-image: -webkit-linear-gradient(to right,#fff,rgba(255,255,255,0),#999);
+    background-image: linear-gradient(to right,#fff,rgba(255,255,255,0),#999);
+    left: 0%;
+    right: 50%;
+    height: 1px;
+    z-index: 1;
+}
+
+#footer-bottom .footer-link{
+    text-align: center;
+}
+
+#footer-bottom .footer-link a{
+    padding: 0px 10px;
+}
+
+#footer-bottom .footer-link a:hover{
+    color: #FF7F00;
+}
+
+ 

@@ -1,0 +1,7 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.csmedlab.com	TRUE	/	FALSE	1999999999	ASP.NET_SessionId	hi1zk05rslulfyupcwswdeqk
+www.virion-serion.net	TRUE	/	FALSE	1999999999	sdwaf-test-item	c93bbc0355520501530507090301010b545252570704525603080c51060156
+www.csmedlab.com	TRUE	/	FALSE	1999999999	vm_CookieName	1
+www.csmedlab.com	TRUE	/	FALSE	1999999999	SERVERID	0634046e98dc6b5194b3b6e837dff1ce|1577415811|1577414382
+

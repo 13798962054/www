@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="cn">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>深圳市中南医学检验实验室</title>
+  <base href=".">
+  <meta name="description" content="深圳市中南医学检验实验室">
+  <meta name="keywords" content="深圳市中南医学检验实验室">
+  <script src="csmedlab/jquery-2.1.1.min.js" type="text/javascript">
+  </script>
+  <link href="csmedlab/bootstrap.min.css" rel="stylesheet" media="screen">
+  <script src="csmedlab/bootstrap.min.js" type="text/javascript">
+  </script>
+  <link href="csmedlab/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="csmedlab/css" rel="stylesheet" type="text/css">
+  <link href="csmedlab/stylesheet.css" rel="stylesheet">
+  <link href="csmedlab/swiper.min.css" type="text/css" rel="stylesheet" media="screen">
+  <link href="csmedlab/opencart.css" type="text/css" rel="stylesheet" media="screen">
+  <script src="csmedlab/swiper.jquery.js" type="text/javascript">
+  </script>
+  <script src="csmedlab/common.js" type="text/javascript">
+  </script>
+  <link href="" rel="icon">
+</head>
+<body>
+  <nav id="top">
+    <div class="container">
+      <div class="pull-left">
+        <form action="" method="post" enctype="multipart/form-data" id="form-currency">
+          <div class="btn-group">
+            <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">                               
+              <strong>$</strong>        
+              <span class="hidden-xs hidden-sm hidden-md">货币</span>&nbsp;
+              <i class="fa fa-caret-down">
+              </i>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <button class="currency-select btn btn-link btn-block" type="button" name="USD">$ US Dollar</button>
+              </li>
+              <li>
+                <button class="currency-select btn btn-link btn-block" type="button" name="CNY">￥ 人民币</button>
+              </li>
+              <li>
+                <button class="currency-select btn btn-link btn-block" type="button" name="HKD">$ 港币</button>
+              </li>
+            </ul>
+          </div>
+          <input type="hidden" name="code" value="">
+          <input type="hidden" name="redirect" value="">
+        </form>
+      </div>
+
+      <div class="pull-left">
+        <form action="" method="post" enctype="multipart/form-data" id="form-language">
+          <div class="btn-group">
+            <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+
+              <img src="csmedlab/zh-cn.png" alt="简体中文" title="简体中文">
+              <span class="hidden-xs hidden-sm hidden-md">语言</span>&nbsp;<i class="fa fa-caret-down">
+              </i>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <button class="btn btn-link btn-block language-select" type="button" name="en-gb">
+                  <img src="csmedlab/en-gb.png" alt="English" title="English"> English</button>
+                </li>
+                <li>
+                  <button class="btn btn-link btn-block language-select" type="button" name="zh-cn">
+                    <img src="csmedlab/zh-cn.png" alt="简体中文" title="简体中文"> 简体中文</button>
+                  </li>
+                  <li>
+                    <button class="btn btn-link btn-block language-select" type="button" name="zh-hk">
+                      <img src="csmedlab/zh-hk.png" alt="繁體中文" title="繁體中文"> 繁體中文</button>
+                    </li>
+                  </ul>
+                </div>
+                <input type="hidden" name="code" value="">
+                <input type="hidden" name="redirect" value="">
+              </form>
+            </div>
+
+            <div id="top-links" class="nav pull-right">
+              <ul class="list-inline">
+
+
+
+               <li>
+                <a href="">
+                  <i class="fa fa-phone">
+                  </i>
+                </a>
+                <span class="hidden-xs hidden-sm hidden-md">18561800618</span>
+              </li>
+              <li class="dropdown">
+                <a href="" title="会员账户" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-user">
+                  </i>
+                  <span class="hidden-xs hidden-sm hidden-md">会员账户</span>
+                  <span class="caret">
+                  </span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li>
+                    <a href="">注册</a>
+                  </li>
+                  <li>
+                    <a href="">登录</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="" id="wishlist-total" title="收藏 (0)">
+                  <i class="fa fa-heart">
+                  </i>
+                  <span class="hidden-xs hidden-sm hidden-md">收藏 (0)</span>
+                </a>
+              </li>
+              <li>
+                <a href="" title="购物车">
+                  <i class="fa fa-shopping-cart">
+                  </i>
+                  <span class="hidden-xs hidden-sm hidden-md">购物车</span>
+                </a>
+              </li>
+              <li>
+                <a href="" title="结算">
+                  <i class="fa fa-share">
+                  </i>
+                  <span class="hidden-xs hidden-sm hidden-md">结算</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div id="logo">
+                <a href="">
+                  <img src="csmedlab/logo.png" title="深圳市中南医学检验实验室" alt="深圳市中南医学检验实验室" class="img-responsive">
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <div id="search" class="input-group">
+                <input type="text" name="search" value="" placeholder="搜索" class="form-control input-lg">
+                <span class="input-group-btn">
+                  <button type="button" class="btn btn-default btn-lg">
+                    <i class="fa fa-search">
+                    </i>
+                  </button>
+                </span>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div id="cart" class="btn-group btn-block">
+                <button type="button" data-toggle="dropdown" data-loading-text="加载中......" class="btn btn-inverse btn-block btn-lg dropdown-toggle">
+                  <i class="fa fa-shopping-cart">
+                  </i>
+                  <span id="cart-total">0 项商品 - $0.00</span>
+                </button>
+                <ul class="dropdown-menu pull-right">
+                  <li>
+                    <p class="text-center">您的购物车没有添加商品！</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <nav id="menu" class="navbar">
+          <div class="navbar-header">
+            <span id="category" class="visible-xs">导航栏</span>
+            <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <i class="fa fa-bars">
+              </i>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">商品类型一</a>
+                <div class="dropdown-menu" style="">
+                  <div class="dropdown-inner">               <ul class="list-unstyled">
+                    <li>
+                      <a href="">test1</a>
+                    </li>
+                    <li>
+                      <a href="">test2</a>
+                    </li>
+                  </ul>
+                </div>
+                <a href="" class="see-all">显示所有商品类型一</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">商品类型二</a>
+              <div class="dropdown-menu" style="">
+                <div class="dropdown-inner">               <ul class="list-unstyled">
+                  <li>
+                    <a href="">test1</a>
+                  </li>
+                  <li>
+                    <a href="">test2</a>
+                  </li>
+                </ul>
+              </div>
+              <a href="" class="see-all">显示所有商品类型二</a>
+            </div>
+          </li>
+          <li>
+            <a href="">商品类型三</a>
+          </li>
+          <li class="dropdown">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown">商品类型四</a>
+            <div class="dropdown-menu" style="">
+              <div class="dropdown-inner">               <ul class="list-unstyled">
+                <li>
+                  <a href="">test2</a>
+                </li>
+                <li>
+                  <a href="">test3</a>
+                </li>
+                <li>
+                  <a href="">test4</a>
+                </li>
+                <li>
+                  <a href="">test5</a>
+                </li>
+                <li>
+                  <a href="">test6</a>
+                </li>
+              </ul>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="">test6</a>
+                </li>
+                <li>
+                  <a href="">test8</a>
+                </li>
+              </ul>
+            </div>
+            <a href="" class="see-all">显示所有商品类型三</a>
+          </div>
+        </li>
+        <li>
+          <a href="">博客</a>
+        </li>
+        <li>
+          <a href="">新闻</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+<div id="common-home" class="container">
+  <div class="row">
+    <div id="content" class="col-sm-12">
+      <div class="swiper-viewport">
+        <div id="slideshow0" class="swiper-container swiper-container-horizontal">
+          <div class="swiper-wrapper" style="transform: translate3d(-2226px, 0px, 0px); transition-duration: 0ms;">
+            <div class="swiper-slide text-center swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="1" style="width: 712px; margin-right: 30px;">
+              <a href="">
+                <img src="csmedlab/slide2-1140x580.jpg" alt="客厅 2" class="img-responsive">
+              </a>
+            </div>       
+            <div class="swiper-slide text-center swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 712px; margin-right: 30px;">
+              <a href="">
+                <img src="csmedlab/slide1-1140x580.jpg" alt="客厅 1" class="img-responsive">
+              </a>
+            </div>
+            <div class="swiper-slide text-center swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 712px; margin-right: 30px;">
+              <a href="">
+                <img src="csmedlab/slide2-1140x580.jpg" alt="客厅 2" class="img-responsive">
+              </a>
+            </div>
+            <div class="swiper-slide text-center swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 712px; margin-right: 30px;">
+              <a href="">
+                <img src="csmedlab/slide1-1140x580.jpg" alt="客厅 1" class="img-responsive">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination slideshow0 swiper-pagination-clickable swiper-pagination-bullets">
+          <span class="swiper-pagination-bullet swiper-pagination-bullet-active">
+          </span>
+          <span class="swiper-pagination-bullet">
+          </span>
+        </div>
+        <div class="swiper-pager">
+          <div class="swiper-button-next">
+          </div>
+          <div class="swiper-button-prev">
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        <!--
+          $('#slideshow0').swiper({
+           mode: 'horizontal',
+           slidesPerView: 1,
+           pagination: '.slideshow0',
+           paginationClickable: true,
+           nextButton: '.swiper-button-next',
+           prevButton: '.swiper-button-prev',
+           spaceBetween: 30,
+           autoplay: 2500,
+           autoplayDisableOnInteraction: true,
+           loop: true
+         });
+          -->
+        </script>
+        <h3>特色商品</h3>
+        <div class="row">
+         <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="product-thumb transition">
+            <div class="image">
+              <a href="">
+                <img src="csmedlab/product9_1-200x200.jpg" alt="玻璃茶几" title="玻璃茶几" class="img-responsive">
+              </a>
+            </div>
+            <div class="caption">
+              <h4>
+                <a href="">玻璃茶几</a>
+              </h4>
+              <p>在本次3月份苹果春季新品发布会上，除了最为耀眼的新款MacBook外，苹果还对MacBook Air与13英寸的Retina MacBook Pro进行了常规硬件升级。其中13英寸的Retina Ma..</p>
+              <p class="price">
+                $0.01
+              </p>
+            </div>
+            <div class="button-group">
+              <button type="button" onclick="cart.add(&#39;43&#39;);">
+                <i class="fa fa-shopping-cart">
+                </i>
+                <span class="hidden-xs hidden-sm hidden-md">加入购物车</span>
+              </button>
+              <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add(&#39;43&#39;);" data-original-title="收藏">
+                <i class="fa fa-heart">
+                </i>
+              </button>
+              <button type="button" data-toggle="tooltip" title="" onclick="compare.add(&#39;43&#39;);" data-original-title="对比">
+                <i class="fa fa-exchange">
+                </i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="product-thumb transition">
+            <div class="image">
+              <a href="">
+                <img src="csmedlab/product19_1-200x200.jpg" alt="躺式沙发" title="躺式沙发" class="img-responsive">
+              </a>
+            </div>
+            <div class="caption">
+              <h4>
+                <a href="">躺式沙发</a>
+              </h4>
+              <p>2015年3月6日，苹果iPhone6 Plus（行货）在"拍易得"现货促销，现在在其网上购买苹果iPhone6 Plus仅需95元即可秒杀。这款手机的配件包括：充电器、耳机和数据线等。苹果iPhon..</p>
+              <p class="price">
+                $8.12
+              </p>
+            </div>
+            <div class="button-group">
+              <button type="button" onclick="cart.add(&#39;40&#39;);">
+                <i class="fa fa-shopping-cart">
+                </i>
+                <span class="hidden-xs hidden-sm hidden-md">加入购物车</span>
+              </button>
+              <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add(&#39;40&#39;);" data-original-title="收藏">
+                <i class="fa fa-heart">
+                </i>
+              </button>
+              <button type="button" data-toggle="tooltip" title="" onclick="compare.add(&#39;40&#39;);" data-original-title="对比">
+                <i class="fa fa-exchange">
+                </i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="product-thumb transition">
+            <div class="image">
+              <a href="">
+                <img src="csmedlab/product1_1-200x200.jpg" alt="包式座椅" title="包式座椅" class="img-responsive">
+              </a>
+            </div>
+            <div class="caption">
+              <h4>
+                <a href="">包式座椅</a>
+              </h4>
+              <p>AMD 785G，一个定位于AMD 780G和AMD 
+                790GX之间的产品，近期成为所有主板厂商推广的重点，同时也是所有DIY用户关注的焦点。抛开其整合DirectX 10.1规格的Radeon 
+              ..</p>
+              <p class="price">
+                <span class="price-new">$104.50</span>
+                <span class="price-old">$116.11</span>
+              </p>
+            </div>
+            <div class="button-group">
+              <button type="button" onclick="cart.add(&#39;42&#39;);">
+                <i class="fa fa-shopping-cart">
+                </i>
+                <span class="hidden-xs hidden-sm hidden-md">加入购物车</span>
+              </button>
+              <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add(&#39;42&#39;);" data-original-title="收藏">
+                <i class="fa fa-heart">
+                </i>
+              </button>
+              <button type="button" data-toggle="tooltip" title="" onclick="compare.add(&#39;42&#39;);" data-original-title="对比">
+                <i class="fa fa-exchange">
+                </i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="product-thumb transition">
+            <div class="image">
+              <a href="">
+                <img src="csmedlab/product21_1-200x200.jpg" alt="简约座椅" title="简约座椅" class="img-responsive">
+              </a>
+            </div>
+            <div class="caption">
+              <h4>
+                <a href="">简约座椅</a>
+              </h4>
+              <p>佳能EOS-5D终于揭开了其神秘的面纱，相信大家都对佳能EOS-5D的性能感到满意，但是佳能EOS-5D拍出来的片子如何呢？为此，我们特地从佳能网站上找到几张原尺寸的佳能EOS-5D实拍样张。..</p>
+              <p class="price">
+                <span class="price-new">$92.89</span>
+                <span class="price-old">$116.11</span>
+              </p>
+            </div>
+            <div class="button-group">
+              <button type="button" onclick="cart.add(&#39;30&#39;);">
+                <i class="fa fa-shopping-cart">
+                </i>
+                <span class="hidden-xs hidden-sm hidden-md">加入购物车</span>
+              </button>
+              <button type="button" data-toggle="tooltip" title="" onclick="wishlist.add(&#39;30&#39;);" data-original-title="收藏">
+                <i class="fa fa-heart">
+                </i>
+              </button>
+              <button type="button" data-toggle="tooltip" title="" onclick="compare.add(&#39;30&#39;);" data-original-title="对比">
+                <i class="fa fa-exchange">
+                </i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-viewport">
+        <div id="carousel0" class="swiper-container swiper-container-horizontal">
+          <div class="swiper-wrapper" style="transform: translate3d(-854.4px, 0px, 0px); transition-duration: 0ms;">
+            <div class="swiper-slide text-center swiper-slide-duplicate" data-swiper-slide-index="6" style="width: 142.4px;">
+              <img src="csmedlab/brand_2-130x100.png" alt="Burger King" class="img-responsive">
+            </div>
+            <div class="swiper-slide text-center swiper-slide-duplicate" data-swiper-slide-index="7" style="width: 142.4px;">
+              <img src="csmedlab/brand_1-130x100.png" alt="Coca Cola" class="img-responsive">
+            </div>
+            <div class="swiper-slide text-center swiper-slide-duplicate" data-swiper-slide-index="8" style="width: 142.4px;">
+              <img src="csmedlab/brand_4-130x100.png" alt="Sony" class="img-responsive">
+            </div>
+            <div class="swiper-slide text-center swiper-slide-duplicate" data-swiper-slide-index="9" style="width: 142.4px;">
+              <img src="csmedlab/brand_2-130x100.png" alt="RedBull" class="img-responsive">
+            </div>
+            <div class="swiper-slide text-center swiper-slide-duplicate" data-swiper-slide-index="10" style="width: 142.4px;">
+              <img src="csmedlab/brand_1-130x100.png" alt="NFL" class="img-responsive">
+            </div>      
+            <div class="swiper-slide text-center swiper-slide-prev" data-swiper-slide-index="0" style="width: 142.4px;">
+              <img src="csmedlab/brand_1-130x100.png" alt="Nintendo" class="img-responsive">
+            </div>
+            <div class="swiper-slide text-center swiper-slide-active" data-swiper-slide-index="1" style="width: 142.4px;">
+              <img src="csmedlab/brand_2-130x100.png" alt="Disney" class="img-responsive">
+            </div>
+            <div class="swiper-slide text-center swiper-slide-next" data-swiper-slide-index="2" style="width: 142.4px;">
+              <img src="csmedlab/brand_4-130x100.png" alt="Starbucks" class="img-responsive">
+            </div>
+            <div class="swiper-slide text-center" data-swiper-slide-index="3" style="width: 142.4px;">
+              <img src="csmedlab/brand_4-130x100.png" alt="Harley Davidson" class="img-responsive">
+            </div>
+            <div class="swiper-slide text-center" data-swiper-slide-index="4" style="width: 142.4px;">
+              <img src="csmedlab/brand_1-130x100.png" alt="Dell" class="img-responsive">
+            </div>
+            <div class="swiper-slide text-center" data-swiper-slide-index="5" style="width: 142.4px;">
+              <img src="csmedlab/brand_3-130x100.png" alt="Canon" class="img-responsive">
+            </div>
+            <div class="swiper-slide text-center" data-swiper-slide-index="6" style="width: 142.4px;">
+              <img src="csmedlab/brand_2-130x100.png" alt="Burger King" class="img-responsive">
+            </div>
+            <div class="swiper-slide text-center" data-swiper-slide-index="7" style="width: 142.4px;">
+              <img src="csmedlab/brand_1-130x100.png" alt="Coca Cola" class="img-responsive">
+            </div>
+            <div class="swiper-slide text-center" data-swiper-slide-index="8" style="width: 142.4px;">
+              <img src="csmedlab/brand_4-130x100.png" alt="Sony" class="img-responsive">
+            </div>
+            <div class="swiper-slide text-center" data-swiper-slide-index="9" style="width: 142.4px;">
+              <img src="csmedlab/brand_2-130x100.png" alt="RedBull" class="img-responsive">
+            </div>
+            <div class="swiper-slide text-center" data-swiper-slide-index="10" style="width: 142.4px;">
+              <img src="csmedlab/brand_1-130x100.png" alt="NFL" class="img-responsive">
+            </div>
+            <div class="swiper-slide text-center swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="width: 142.4px;">
+              <img src="csmedlab/brand_1-130x100.png" alt="Nintendo" class="img-responsive">
+            </div>
+            <div class="swiper-slide text-center swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1" style="width: 142.4px;">
+              <img src="csmedlab/brand_2-130x100.png" alt="Disney" class="img-responsive">
+            </div>
+            <div class="swiper-slide text-center swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" style="width: 142.4px;">
+              <img src="csmedlab/brand_4-130x100.png" alt="Starbucks" class="img-responsive">
+            </div>
+            <div class="swiper-slide text-center swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 142.4px;">
+              <img src="csmedlab/brand_4-130x100.png" alt="Harley Davidson" class="img-responsive">
+            </div>
+            <div class="swiper-slide text-center swiper-slide-duplicate" data-swiper-slide-index="4" style="width: 142.4px;">
+              <img src="csmedlab/brand_1-130x100.png" alt="Dell" class="img-responsive">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination carousel0 swiper-pagination-clickable swiper-pagination-bullets">
+          <span class="swiper-pagination-bullet">
+          </span>
+          <span class="swiper-pagination-bullet swiper-pagination-bullet-active">
+          </span>
+          <span class="swiper-pagination-bullet">
+          </span>
+          <span class="swiper-pagination-bullet">
+          </span>
+          <span class="swiper-pagination-bullet">
+          </span>
+          <span class="swiper-pagination-bullet">
+          </span>
+          <span class="swiper-pagination-bullet">
+          </span>
+          <span class="swiper-pagination-bullet">
+          </span>
+          <span class="swiper-pagination-bullet">
+          </span>
+          <span class="swiper-pagination-bullet">
+          </span>
+          <span class="swiper-pagination-bullet">
+          </span>
+        </div>
+        <div class="swiper-pager">
+          <div class="swiper-button-next">
+          </div>
+          <div class="swiper-button-prev">
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        <!--
+          $('#carousel0').swiper({
+           mode: 'horizontal',
+           slidesPerView: 5,
+           pagination: '.carousel0',
+           paginationClickable: true,
+           nextButton: '.swiper-button-next',
+           prevButton: '.swiper-button-prev',
+           autoplay: 2500,
+           loop: true
+         });
+          -->
+        </script>
+        <link href="csmedlab/kefu.css" rel="stylesheet" type="text/css">
+        <div id="rightArrow" style="right: -5px; background-position: -50px 0px;">
+          <a href="javascript:;" title="在线客服">
+          </a>
+        </div>
+        <div id="floatDivBoxs" style="right: -175px;">
+         <div class="floatDtt">在线客服</div>
+         <div class="floatShadow">
+
+          <ul class="floatDqq">
+
+            <li style="padding-left:0px;">
+              <a target="_blank" href="">
+                <img src="csmedlab/qq.png" align="absmiddle" title="销售" alt="销售">&nbsp;&nbsp;销售</a>
+              </li>
+
+              <li style="padding-left:0px;">
+                <a target="_blank" href="">
+                  <img src="csmedlab/qq.png" align="absmiddle" title="技术支持" alt="技术支持">&nbsp;&nbsp;技术支持</a>
+                </li>
+
+              </ul>
+
+              <div class="floatDtxt">客服电话</div>
+              <div class="floatDtel">18561800618</div>
+              <div class="floatDtxt">微信二维码</div>
+              <div style="text-align:center;padding:10PX 0 5px 0;background:#EBEBEB;">
+                <img src="csmedlab/qrcode_for_gh_29f75db0e2c0_430-106x106.jpg">
+              </div>
+            </div>
+            <div class="floatDbg">
+            </div>
+          </div>
+
+          <script type="text/javascript">
+            var flag=1;
+            $('#rightArrow').click(function(){
+             if(flag==1){
+              $("#floatDivBoxs").animate({right: '-175px'},300);
+              $(this).animate({right: '-5px'},300);
+              $(this).css('background-position','-50px 0');
+              flag=0;
+            }else{
+              $("#floatDivBoxs").animate({right: '0'},300);
+              $(this).animate({right: '170px'},300);
+              $(this).css('background-position','0px 0');
+              flag=1;
+            }
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <h5>信息文章</h5>
+          <ul class="list-unstyled">
+           <li>
+            <a href="">关于我们</a>
+          </li>
+          <li>
+            <a href="">物流配送</a>
+          </li>
+          <li>
+            <a href="">隐私政策</a>
+          </li>
+          <li>
+            <a href="">使用条款</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>会员服务</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="">联系我们</a>
+          </li>
+          <li>
+            <a href="">退换服务</a>
+          </li>
+          <li>
+            <a href="">网站地图</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>其他</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="">品牌专区</a>
+          </li>
+          <li>
+            <a href="">礼品券</a>
+          </li>
+          <li>
+            <a href="">推广会员</a>
+          </li>
+          <li>
+            <a href="">优惠商品</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>会员中心</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="">会员中心</a>
+          </li>
+          <li>
+            <a href="">历史订单</a>
+          </li>
+          <li>
+            <a href="">收藏列表</a>
+          </li>
+          <li>
+            <a href="#">订阅咨询</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

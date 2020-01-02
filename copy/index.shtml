@@ -1,0 +1,482 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<script src="js/jquery.js" type=text/javascript></script>
+<script src="js/kandytabs.pack.js" type=text/javascript></script>
+<script src="js/custom.js" type=text/javascript></script>
+<link href="css/page.css" rel="stylesheet" type="text/css">
+
+<title>博奥生物</title>
+</head>
+<style type="text/css">
+#imageplay  .changeDiv h3{ display:none; background:none; }
+#imageplay  .changeDiv h3{ bottom:5px;}
+#bannerplay div{ border:none;}
+#bannerplay div .ul_changeThumb{right:30px; bottom:-35px; height:80px;}
+#bannerplay div .imgbox{ height:80px; }
+#bannerplay div .ul_changeThumb li{ height:74px; background:url(images/shadowbg.gif) no-repeat scroll center bottom transparent;}
+#bannerplay div .ul_changeThumb li a{ width:60px; height:60px; overflow:hidden; display:block; position:relative; zoom:1;}
+#bannerplay div .ul_changeThumb li b{ width:60px; height:60px; overflow:hidden; display:block;  position: absolute; left:0; top:0; background:url(images/thumbImgBorder.gif) no-repeat left top; z-index:2000; }
+#bannerplay div .ul_changeThumb li .picBox{ width:56px; height:56px; overflow:hidden; position:absolute; top:2px; left:2px; display:block; background:#000;}
+#bannerplay div .ul_changeThumb li img{ position:relative; left:-5px;  border:none; opacity:0.8; _filter:alpha(opacity=80); }
+#bannerplay div .ul_changeThumb li.now{ background:url(images/shadowcurrentbg.gif) no-repeat scroll center bottom transparent}
+#bannerplay div .ul_changeThumb li.now b{ background:url(images/thumbImgBorder_cur.gif) no-repeat 0 0; }
+#bannerplay div .ul_changeThumb li.now img{ opacity:1.0; _filter:alpha(opacity=100)}
+</style>
+<body >
+<!--头部开始-->
+<link href="css/common.css" rel="stylesheet" type="text/css">
+
+
+<div class="pageWidth header">
+  <div class="navbg">
+<div class="logo fl"><img src="images/logo.gif" /></div>
+<div class="navall fr">
+  <div class="c_or_en"><a href="http://www.capitalbio.com/" class="en" target="_blank">English</a></div>
+  <div class="nav" id="menuu">
+    <ul>
+      <li><a id="index" href="index.shtml">首页</a></li>
+      <li>
+        <a id="000030" href="cp/index.shtml">产品</a>
+        <ul>
+        	<!--循环：catalog count：50-->
+
+         	 <li  style="width:90px;"><a href="http://cn.capitalbio.com/tjcp/index.shtml">仪器试剂</a></li>
+       		
+         	 <li  style="width:90px;"><a href="http://cn.capitalbio.com/gxba/gcgc/gcjg/tjfw/index.shtml">检测服务</a></li>
+       		
+         	 <li  style="width:90px;"><a href="cp/kjsyb/rj/index.shtml">软件</a></li>
+       		
+        </ul>
+      </li>
+      <li><a id="000031" href="bw/index.shtml">服务</a>
+      	 <ul>
+        	<!--循环：catalog count：50-->
+
+         	 <li style="width:130px;"><a href="http://www.capitalbiotech.com/">生命科学服务</a></li>
+       		
+         	 <li style="width:130px;"><a href="http://www.bioeh.com/">健康科学服务</a></li>
+       		
+         	 <li style="width:130px;"><a href="bw/wjgjsbw/jsfw/index.shtml">微加工技术服务</a></li>
+       		
+        </ul>
+      </li>
+      <li class="onlywidth"><a id="000032" href="khqc/yhsyb/jswd/index.shtml">客户支持</a>
+      <ul>
+        	<!--循环：catalog count：50-->
+
+         	 <li style="width:140px;"><a href="http://science.capitalbio.com/khfbwz/smkxsbxg/index.shtml" target="_blank">客户发表文献</a></li>
+       		
+         	 <li style="width:140px;"><a href="khqc/yhsyb/jswd/gsfbwxyzz/index.shtml" target="_blank">博奥发表论文与专著</a></li>
+       		
+        </ul>
+      </li>
+      <li class="noline onlywidth"><a id="000033" href="gxba/gcgc/gcjg/index.shtml">关于博奥</a>
+      <ul>
+        	<!--循环：catalog count：50-->
+
+         	 <li style="width:84px;"><a href="gxba/gcgc/gcjg/index.shtml">公司介绍</a></li>
+       		
+         	 <li style="width:84px;"><a href="gxba/zxgc/zxjg/index.shtml">中心介绍</a></li>
+       		
+         	 <li style="width:84px;"><a href="gxba/xwzx/index.shtml">新闻中心</a></li>
+       		
+         	 <li style="width:84px;"><a href="gxba/jsxj/jsbs/index.shtml">技术研究</a></li>
+       		
+         	 <li style="width:84px;"><a href="gxba/ljwm/lxfs/index.shtml">加入我们</a></li>
+       		
+        </ul>
+      </li>
+    </ul>
+    <div class="search fr"> 
+    	<form action="http://cn.capitalbio.com/cms/Search/Result.jsp" style="padding:0px; margin:0px;">
+         <input type="hidden" id="site" name="site" value="1" />        
+    	 <input class="seartext" name="query" id="query" type="text"/><input class="searbtn" type="submit" value="搜索" />
+        </form>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!--头部结束-->
+<div class="banner pageWidth" id="banner">
+    <div style="width:1000px; height:360px;" id="bannerplay">
+   		<script type="text/javascript" src="images/playerStyle/1/sChange.js"></script>
+<style>
+.changeBox_style11 { float:left; width:1000px; height:360px; padding:0; position:relative; border:1px solid #aaa; }
+.changeBox_style11 .a_bigImg img { border:none 0; position:absolute; top:0; left:0; display:none; }
+.changeBox_style11 .ul_changeThumb { margin:0; padding:0; font-size:0px; line-height:1em; list-style:none; position:absolute; right:5px; bottom:7px; padding-left:19px; overflow:hidden; }
+.changeBox_style11 .ul_changeThumb li { margin:0; padding:0; display: -moz-inline-stack; display:inline-block; *display:inline;*zoom:1;}
+.changeBox_style11 .ul_changeThumb span { font-size:11px; font-family:Verdana; display: -moz-inline-stack; display:inline-block; *display:inline;*zoom:1; line-height:1.1;
+padding:0px 3px; margin-right:2px; border:1px solid #999; background:#999; color:#fff; filter:alpha(opacity=60); opacity:0.6; cursor:hand; cursor:pointer; }
+.changeBox_style11 .ul_changeThumb span.now { border:1px solid #FF8800; background:#FF8800; filter:alpha(opacity=100); opacity:1; }
+.changeBox_style11 .changeDiv { position:absolute; top:0; left:0; display:none; }
+.changeBox_style11 .changeDiv img{ border:none 0;}
+.changeBox_style11 .changeDiv h3 { margin:0; padding:0; position:absolute; left:0; bottom:0; width:1000px; height:24px; line-height:24px; font-size:12px; font-weight:normal; background:#000; filter:alpha(opacity=60); opacity:0.6; }
+.changeBox_style11 .changeDiv h3 a { display:block; padding-left:12px; text-align:left; text-decoration:none; width:66%; white-space:nowrap; overflow:hidden; color:#FFF; }
+</style>
+
+<div class="changeBox_style11" id="change_11">
+
+	
+  <div class="changeDiv">
+    <h3><a href="http://www.mdconf.org" target="_blank"></a></h3>
+    <a href="http://www.mdconf.org" target="_blank"><img src="upload/Image/mrtp/272605748.jpg" width="1000" height="360" title="" /></a>
+  </div>
+  
+  <div class="changeDiv">
+    <h3><a href="http://cn.capitalbio.com/gxba/activities/26416.shtml" target="_blank"></a></h3>
+    <a href="http://cn.capitalbio.com/gxba/activities/26416.shtml" target="_blank"><img src="upload/Image/mrtp/272749902.jpg" width="1000" height="360" title="" /></a>
+  </div>
+  
+  <div class="changeDiv">
+    <h3><a href="http://cn.capitalbio.com/gxba/xwzx/gsxw/2019nyjd/27268.shtml" target="_blank"></a></h3>
+    <a href="http://cn.capitalbio.com/gxba/xwzx/gsxw/2019nyjd/27268.shtml" target="_blank"><img src="upload/Image/mrtp/272735153.jpg" width="1000" height="360" title="" /></a>
+  </div>
+  
+  <div class="changeDiv">
+    <h3><a href="#;" target="_blank"></a></h3>
+    <a href="#;" target="_blank"><img src="upload/Image/mrtp/banner/260383924.jpg" width="1000" height="360" title="" /></a>
+  </div>
+  
+  <div class="changeDiv">
+    <h3><a href="#;" target="_blank"></a></h3>
+    <a href="#;" target="_blank"><img src="upload/Image/mrtp/272611501.jpg" width="1000" height="360" title="" /></a>
+  </div>
+  
+  <div class="changeDiv">
+    <h3><a href="http://cn.capitalbio.com/gxba/xwzx/gsxw/2017ndejd/26591.shtml" target="_blank">博奥生物上海基地落成 携手业界共建临床科研新生态</a></h3>
+    <a href="http://cn.capitalbio.com/gxba/xwzx/gsxw/2017ndejd/26591.shtml" target="_blank"><img src="upload/Image/mrtp/265909171.jpg" width="1000" height="360" title="博奥生物上海基地落成 携手业界共建临床科研新生态" /></a>
+  </div>
+  
+  <ul class="ul_changeThumb">
+  	
+    <li><span>1</span></li>
+    
+    <li><span>2</span></li>
+    
+    <li><span>3</span></li>
+    
+    <li><span>4</span></li>
+    
+    <li><span>5</span></li>
+    
+    <li><span>6</span></li>
+    
+  </ul>
+
+</div>
+
+<script type="text/javascript">
+
+	sChange({
+		changeObj : '#change_11 div.changeDiv',
+		thumbObj : '#change_11 ul.ul_changeThumb span'
+	});
+
+</script>
+   </div>
+</div>
+
+
+<!--主体内容开始-->
+<div class="pageWidth main padding" style="width:1000px;  background:url(images/mainbg.gif) no-repeat 0 0;">
+<div class="mainall clearfix">
+  <div class="mainleft">
+    <h2><span><a href="gxba/xwzx/gsxw/2019nyjd/index.shtml"><img src="images/newsmore.gif" /></a></span>公司新闻</h2>
+    <div class="imgplayer" id="imageplay" style="overflow:hidden;"><script type="text/javascript" src="http://cn.capitalbio.com/images/playerStyle/2/sChange.js"></script>
+<style>
+.changeBox_style3 { float:left; width:225px; height:125px; padding:0; position:relative; border:1px solid #aaa; }
+.changeBox_style3 .a_bigImg img { border:none 0; position:absolute; top:0; left:0; display:none; }
+.changeBox_style3 .changeDiv { position:absolute; top:0; left:0; display:none; }
+.changeBox_style3 .changeDiv img{ border:none 0;}
+.changeBox_style3 .changeDiv h3 { margin:0; padding:0; position:absolute; left:0; bottom:0; width:225px; height:24px; line-height:24px; font-size:12px; font-weight:normal; background:#000; filter:alpha(opacity=60); opacity:0.6; }
+.changeBox_style3 .changeDiv h3 a { display:block; padding-left:12px; text-align:left; text-decoration:none; width:77%; white-space:nowrap; overflow:hidden; color:#FFF; }
+
+.changeBox_style3 .a_last,
+.changeBox_style3 .a_next { position:absolute; bottom:6px; width:18px; height:18px; background:url(http://cn.capitalbio.com/images/playerStyle/2/bot3.png) no-repeat; _background:url(http://cn.capitalbio.com/images/playerStyle/2/bot3.gif) no-repeat; text-indent:-999em; overflow:hidden; }
+.changeBox_style3 .a_last { right:30px; background-position:0 0; }
+.changeBox_style3 .a_next { right:10px; background-position:-20px 0; }
+.changeBox_style3 .a_last:hover { background-position:0 -20px; }
+.changeBox_style3 .a_next:hover { background-position:-20px -20px; }
+</style>
+
+<div class="changeBox_style3" id="change_3">
+	
+  <div class="changeDiv">
+    <h3><a href="http://cn.capitalbio.com/gxba/xwzx/gsxw/2019nyjd/27162.shtml" target="_blank"></a></h3>
+    <a href="http://cn.capitalbio.com/gxba/xwzx/gsxw/2019nyjd/27162.shtml" target="_blank"><img src="http://cn.capitalbio.com/upload/Image/mrtp/272171092.jpg" width="225" height="125" title="" /></a>
+  </div>
+  
+  <div class="changeDiv">
+    <h3><a href="http://cn.capitalbio.com/gxba/xwzx/gsxw/2019nyjd/27186.shtml" target="_blank"></a></h3>
+    <a href="http://cn.capitalbio.com/gxba/xwzx/gsxw/2019nyjd/27186.shtml" target="_blank"><img src="http://cn.capitalbio.com/upload/Image/mrtp/272483510.jpg" width="225" height="125" title="" /></a>
+  </div>
+  
+  <div class="changeDiv">
+    <h3><a href="http://cn.capitalbio.com/gxba/xwzx/gsxw/2018nyjd/26895.shtml" target="_blank">2018.03.03新华网全国两会特别访谈——程京:助力慢病防控 打造治未病"哑铃模式"</a></h3>
+    <a href="http://cn.capitalbio.com/gxba/xwzx/gsxw/2018nyjd/26895.shtml" target="_blank"><img src="http://cn.capitalbio.com/upload/Image/mrtp/268985230.jpg" width="225" height="125" title="2018.03.03新华网全国两会特别访谈——程京:助力慢病防控 打造治未病"哑铃模式"" /></a>
+  </div>
+  
+  <div class="changeDiv">
+    <h3><a href="http://cn.capitalbio.com/gxba/xwzx/gsxw/2017ndsjd/26648.shtml" target="_blank">博奥生物上海基地落成 携手业界共建临床科研新生态</a></h3>
+    <a href="http://cn.capitalbio.com/gxba/xwzx/gsxw/2017ndsjd/26648.shtml" target="_blank"><img src="http://cn.capitalbio.com/upload/Image/mrtp/266195334.jpg" width="225" height="125" title="博奥生物上海基地落成 携手业界共建临床科研新生态" /></a>
+  </div>
+  
+  <a href="#;" class="a_last" title="上一个">上一个</a><a href="#;" class="a_next" title="下一个">下一个</a>
+</div>
+
+<script type="text/javascript">
+
+	sChange({
+		changeObj : '#change_3 div.changeDiv',
+		botPrev : '#change_3 .a_last',
+		botNext : '#change_3 .a_next'
+	});
+
+</script></div>
+    <div class="newslist">
+      <ul>
+      	<!--循环：article count：5-->
+
+
+      	  <li><a href="gxba/xwzx/gsxw/2019nejd/27218.shtml" title="健康时报丨国人健康要“抓两头盯中间”，金融赋能医疗让健康更持续"><span style="font-family:'宋体', Geneva, sans-serif;">&middot;</span>健康时报丨国人健康要“抓两头盯......</a></li>
+        
+
+      	  <li><a href="gxba/xwzx/gsxw/2019nejd/27206.shtml" title="CCTV1晚间新闻丨传统医学+创新 智慧健康成亮点"><span style="font-family:'宋体', Geneva, sans-serif;">&middot;</span>CCTV1晚间新闻丨传统医学+创新 ......</a></li>
+        
+
+      	  <li><a href="gxba/xwzx/gsxw/2019nyjd/27186.shtml" title="央视《对话》国家科学技术奖丨遗传性耳聋芯片里的大乾坤"><span style="font-family:'宋体', Geneva, sans-serif;">&middot;</span>央视《对话》国家科学技术奖丨遗......</a></li>
+        
+
+      	  <li><a href="gxba/xwzx/gsxw/2018nyjd/26937.shtml" title="北京卫视丨实施健康中国战略 把人民健康放在优先发展的战略地位"><span style="font-family:'宋体', Geneva, sans-serif;">&middot;</span>北京卫视丨实施健康中国战略 把......</a></li>
+        
+
+      	  <li><a href="gxba/xwzx/gsxw/2018nyjd/26930.shtml" title="千龙网丨程京代表：建设健康中国须抓“两头”"><span style="font-family:'宋体', Geneva, sans-serif;">&middot;</span>千龙网丨程京代表：建设健康中国......</a></li>
+        
+      </ul>
+    </div>
+  </div>
+  <div class="mainmiddle fl">
+    <div class="mainmiddlecommon">
+      <h2><span><a href="tjcp/index.shtml"><img src="images/newsmore.gif" /></a></span>推荐产品</h2>
+    </div>
+    <div class="pro_tab">
+        <dl id="fold-right">
+        <!--循环：article count：1-->
+
+
+         <dt><span>1</span></dt>
+         <dd>
+            <div class="pro_tabpic fl"><a href="tjcp/27262.shtml" title="目诊仪"><img src="upload/Image/mrtp/1_272678898.jpg" height="90" /></a></div>
+            <div class="pro_tabcon fr">
+               <h3><a href="tjcp/27262.shtml">目诊仪</a></h3>
+               <p><a href="tjcp/27262.shtml">目诊仪用于采集眼睛白睛部位图像，供临床观察白睛部位特征辅助诊......</a></p>
+            </div>
+         </dd>
+         
+         <!--循环：article count：2-->
+
+
+         <dt><span>2</span></dt>
+         <dd>
+            <div class="pro_tabpic fl"><a href="tjcp/24041.shtml" title="BioelectronSeq 4000基因测序仪"><img src="upload/Image/mrtp/1_25838744.jpg"  height="90"/></a></div>
+            <div class="pro_tabcon fr">
+               <h3><a href="tjcp/24041.shtml">BioelectronSeq 4000基因测序仪</a></h3>
+               <p><a href="tjcp/24041.shtml">BioelectronSeq 4000基因测序仪通过生物电子芯片对核苷酸聚合反......</a></p>
+            </div>
+         </dd>
+         
+         <!--循环：article count：3-->
+
+
+         <dt><span>3</span></dt>
+         <dd>
+            <div class="pro_tabpic fl"><a href="tjcp/23642.shtml" title="晶芯 RTisochipTM-A 恒温扩增微流控芯片核酸分析仪"><img src="upload/Image/mrtp/1_258674400.jpg" height="90" /></a></div>
+            <div class="pro_tabcon fr">
+               <h3><a href="tjcp/23642.shtml">晶芯 RTisochipTM-A 恒温扩增微流控芯片核酸分析仪</a></h3>
+               <p><a href="tjcp/23642.shtml">用于临床和食品安全高通量、快速检测多种常见病原菌和病毒。</a></p>
+            </div>
+         </dd>
+         
+         <!--循环：article count：4-->
+
+
+         <dt><span>4</span></dt>
+         <dd>
+            <div class="pro_tabpic fl"><a href="tjcp/23645.shtml" title="全自动生物芯片反应阅读仪"><img src="upload/Image/mrtp/1_258648145.jpg" height="90" /></a></div>
+            <div class="pro_tabcon fr">
+               <h3><a href="tjcp/23645.shtml">全自动生物芯片反应阅读仪</a></h3>
+               <p><a href="tjcp/23645.shtml">将实验过程中的反应、清洗和检测三步合一的高度集成化芯片实验分......</a></p>
+            </div>
+         </dd>
+         
+        </dl>
+    </div>
+    <div class="mainmiddlecommon">
+      <h2><span><a href="gxba/gcgc/gcjg/tjfw/index.shtml"><img src="images/newsmore.gif" /></a></span>推荐服务</h2>
+    </div>
+    <div class="pro_tab">
+        <dl id="fold-right2">
+         <!--循环：article count：1-->
+
+
+         <dt><span>1</span></dt>
+         <dd>
+            <div class="pro_tabpic fl"><a href="gxba/gcgc/gcjg/tjfw/25821.shtml" title="爱身谱易感基因检测"><img src="upload/Image/mrtp/1_258345493.jpg" height="90"/></a></div>
+            <div class="pro_tabcon fr">
+               <h3><a href="gxba/gcgc/gcjg/tjfw/25821.shtml">爱身谱易感基因检测</a></h3>
+               <p><a href="gxba/gcgc/gcjg/tjfw/25821.shtml">通过基因检测评估中国人常见的13类150种疾病的患病风险达到有效......</a></p>
+            </div>
+         </dd>
+		
+		<!--循环：article count：2-->
+
+
+         <dt><span>2</span></dt>
+         <dd>
+            <div class="pro_tabpic fl"><a href="gxba/gcgc/gcjg/tjfw/25825.shtml" title="圆梦谱肠道菌群检测"><img src="upload/Image/mrtp/1_258298506.jpg" height="90" /></a></div>
+            <div class="pro_tabcon fr">
+               <h3><a href="gxba/gcgc/gcjg/tjfw/25825.shtml">圆梦谱肠道菌群检测</a></h3>
+               <p><a href="gxba/gcgc/gcjg/tjfw/25825.shtml">检测肠道菌群种类与数量，为提供个性化健康调理方案勾画出肠道微......</a></p>
+            </div>
+         </dd>
+		
+		<!--循环：article count：3-->
+
+
+         <dt><span>3</span></dt>
+         <dd>
+            <div class="pro_tabpic fl"><a href="gxba/gcgc/gcjg/tjfw/25830.shtml" title="爱身谱遗传性肿瘤基因检测"><img src="upload/Image/mrtp/1_258329008.jpg" height="90" /></a></div>
+            <div class="pro_tabcon fr">
+               <h3><a href="gxba/gcgc/gcjg/tjfw/25830.shtml">爱身谱遗传性肿瘤基因检测</a></h3>
+               <p><a href="gxba/gcgc/gcjg/tjfw/25830.shtml">检测37种常见遗传性肿瘤关键基因致病突变，了解家族遗传史，评估......</a></p>
+            </div>
+         </dd>
+		
+		<!--循环：article count：4-->
+
+
+         <dt><span>4</span></dt>
+         <dd>
+            <div class="pro_tabpic fl"><a href="gxba/gcgc/gcjg/tjfw/25885.shtml" title="染色体异常检测系列"><img src="" height="90" /></a></div>
+            <div class="pro_tabcon fr">
+               <h3><a href="gxba/gcgc/gcjg/tjfw/25885.shtml">染色体异常检测系列</a></h3>
+               <p><a href="gxba/gcgc/gcjg/tjfw/25885.shtml"></a></p>
+            </div>
+         </dd>
+		
+        </dl>
+    </div>
+  </div>
+  <div class="mainright">
+    <h2><span><a href="gxba/activities/index.shtml"><img src="images/newsmore.gif" /></a></span>活动</h2>
+    <!--循环：article count：3-->
+
+
+  	  <div class="activecommon">
+          <div class="imgplayer fl"><img src="upload/Image/mrtp/1_272365109.jpg" height="70" width="105" /></div>
+          <div class="pro_title fr" style="width:123px;">
+            <h3 style="line-height:normal"><a href="gxba/activities/27222.shtml">2019年京交会，博奥这样向世界推介</a></h3>
+          </div>
+          <div class="clear"></div>
+    </div>
+    
+
+  	  <div class="activecommon">
+          <div class="imgplayer fl"><img src="upload/Image/mrtp/1_267346113.jpg" height="70" width="105" /></div>
+          <div class="pro_title fr" style="width:123px;">
+            <h3 style="line-height:normal"><a href="gxba/activities/26733.shtml">程京院士受邀出席2017世界健康大会并成为大会智库专家</a></h3>
+          </div>
+          <div class="clear"></div>
+    </div>
+    
+
+  	  <div class="activecommon">
+          <div class="imgplayer fl"><img src="upload/Image/mrtp/1_266893329.jpg" height="70" width="105" /></div>
+          <div class="pro_title fr" style="width:123px;">
+            <h3 style="line-height:normal"><a href="gxba/activities/26688.shtml">一千余名专家学者齐聚温江 第八届中国分子诊断技术大会盛大开幕</a></h3>
+          </div>
+          <div class="clear"></div>
+    </div>
+    
+  </div>
+</div>
+	<div class="tab">
+		<ul id="tabnav02">
+			<li onclick="go_to(1);" class="current">业务领域</li>
+			<li onclick="go_to(2);">友情链接</li>
+			<li onclick="go_to(3);">应用系统</li>
+<li onclick="go_to(4);">集团下属</li>
+		</ul>
+		<div id="tabcon_1" class="tabcon block">
+			<ul class="tab_link inline-block">
+            <!--循环：friendlink count：50-->
+
+           </ul>
+		</div>	
+		<div id="tabcon_2" class="tabcon">
+			<ul class="tab_link inline-block">
+              <!--循环：friendlink count：50-->
+
+
+              <li><a href="http://www.thholding.com.cn/" target="_blank">清华控股</a></li>
+           	 
+            </ul>
+		</div>	
+		<div id="tabcon_3" class="tabcon">
+			<ul class="tab_link inline-block">
+              <!--循环：friendlink count：50-->
+
+            </ul>
+		</div>	
+<div id="tabcon_4" class="tabcon">
+			<ul class="tab_link inline-block">
+              <!--循环：friendlink count：50-->
+
+
+             	 <li><a href="http://bioeh.com/" target="_blank">博奥颐和</a></li>
+              
+
+             	 <li><a href="http://www.capitalgenomics.com:7001/" target="_blank">博奥木华基因</a></li>
+              
+
+             	 <li><a href="http://www.biodx.com/" target="_blank">博奥医学检验</a></li>
+              
+
+             	 <li><a href="http://www.capitalbiotech.com/" target="_blank">博奥晶典</a></li>
+              
+            </ul>
+		</div>	
+		<script type="text/javascript">
+		var d=document.getElementById("tabnav02").getElementsByTagName("li");
+		function go_to(s){
+			for(var i=1;i<=d.length;i++){
+				if(s==i){
+				
+				d[i-1].className="current";
+				document.getElementById("tabcon_"+i).className="tabcon block";
+				}
+				else{
+				
+				d[i-1].className="";
+				document.getElementById("tabcon_"+i).className="tabcon";
+				}
+			}
+		}
+		</script>
+</div>
+</div>
+<!--主体内容结束-->
+<div class="pageWidth footer" style="width:1000px;">
+  <div class="f_content">Copyright&nbsp;&#169;&nbsp;2000-2016博奥生物集团有限公司&nbsp;京ICP备14023013号-3&nbsp;《互联网药品信息服务资格证书》：（京）-非经营性-2016-0047&nbsp;技术支持：<a style="color:#747474;" href="http://www.zving.com" target="_blank">泽元软件</a></div>
+</div>
+<script type="text/javascript">
+	var curCatalogInnerCode=document.getElementById("index");//获取当前页面所在栏目的InnerCode，这句不能够写在外部js文件里
+	curCatalogInnerCode.className+=" menucurrent current";
+</script>
+</body>
+</html>
+<script src="http://cn.capitalbio.com/cms/Services/Stat.js" type="text/javascript"></script>

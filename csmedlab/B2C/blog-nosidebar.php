@@ -1,0 +1,539 @@
+﻿<?php require_once ("header-footer/header.php"); ?>
+		<!--Breadcrumb Tow Start-->
+		<div class="breadcrumb-tow mb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb-title">
+                            <h1>Blog No Sidebar</h1>
+                        </div>
+                        <div class="breadcrumb-content breadcrumb-content-tow">
+                            <ul>
+                                <li><a href="index.php">Home</a></li>
+                                <li class="active">Blog No Sidebar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!--Breadcrumb Tow End-->
+		<!--Blog Area Start-->
+		<div class="blog-area white-bg pt-0 pb-0 mb-70">
+		    <div class="container">
+		        <div class="row">
+                    <!--Blog Post Start-->
+		            <div class="col-lg-9 ml-auto mr-auto">
+		                <div class="blog_area">
+                            <article class="blog_single">
+                                <header class="entry-header">
+                                    <span class="post-category">
+                                        <a href="#"> Fashion</a>,<a href="#">WordPress</a>
+                                    </span>
+                                    <h2 class="entry-title">
+                                        <a href="single-blog.php">Blog image post</a>
+                                    </h2>
+                                    <span class="post-author">
+                                    <span class="post-by"> Posts by : </span> admin </span>
+                                    <span class="post-separator">|</span>
+                                    <span class="blog-post-date"><i class="fas fa-calendar-alt"></i>On March 10, 2018 </span>
+                                </header>
+                                <div class="post-thumbnail img-full">
+                                    <a href="single-blog.php">
+                                        <img src="img/blog/blog1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="postinfo-wrapper">
+                                    <div class="post-info">
+                                        <div class="entry-summary">
+                                            <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue
+                                                condimentum rhoncus. Praesent ornare tortor</p>
+                                            <a href="single-blog.php" class="form-button">Read More</a>
+                                            <div class="social-sharing">
+                                                <div class="widget widget_socialsharing_widget">
+                                                    <h3 class="widget-title">Share this post</h3>
+                                                    <ul class="blog-social-icons">
+                                                        <li>
+                                                            <a target="_blank" title="Facebook" href="#" class="facebook social-icon">
+                                                                <i class="fa fa-facebook"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a target="_blank" title="twitter" href="#" class="twitter social-icon">
+                                                                <i class="fa fa-twitter"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a target="_blank" title="pinterest" href="#" class="pinterest social-icon">
+                                                                <i class="fa fa-pinterest"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a target="_blank" title="linkedin" href="#" class="linkedin social-icon">
+                                                                <i class="fa fa-linkedin"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--start comment in post page -->
+                                <a class="comment" href="#">3 comments</a>
+                                <!--start comment in post page -->
+                            </article>
+                            <article class="blog_single">
+                                <header class="entry-header">
+                                    <span class="post-category">
+                                        <a href="#"> Fashion</a>,<a href="#">WordPress</a>
+                                    </span>
+                                    <h2 class="entry-title">
+                                        <a href="single-blog.php">Post with Gallery</a>
+                                    </h2>
+                                    <span class="post-author">
+                                    <span class="post-by"> Posts by : </span> admin </span>
+                                    <span class="post-separator">|</span>
+                                    <span class="blog-post-date"><i class="fas fa-calendar-alt"></i>On March 10, 2018 </span>
+                                </header>
+                                <div class="post-thumbnail img-full">
+                                   <div class="post-gallery owl-carousel">
+                                       <a href="single-blog.php">
+                                            <img src="img/blog/blog2.jpg" alt="">
+                                        </a>
+                                        <a href="single-blog.php">
+                                            <img src="img/blog/blog1.jpg" alt="">
+                                        </a>
+                                        <a href="single-blog.php">
+                                            <img src="img/blog/blog3.jpg" alt="">
+                                        </a>
+                                        <a href="single-blog.php">
+                                            <img src="img/blog/blog4.jpg" alt="">
+                                        </a>
+                                        <a href="single-blog.php">
+                                            <img src="img/blog/blog5.jpg" alt="">
+                                        </a>
+                                   </div>
+                                </div>
+                                <div class="postinfo-wrapper ">
+                                    <div class="post-info">
+                                        <div class="entry-summary">
+                                            <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue
+                                                condimentum rhoncus. Praesent ornare tortor</p>
+                                            <a href="single-blog.php" class="form-button">Read More</a>
+                                            <div class="social-sharing">
+                                                <div class="widget widget_socialsharing_widget">
+                                                    <h3 class="widget-title">Share this post</h3>
+                                                    <ul class="blog-social-icons">
+                                                        <li>
+                                                            <a target="_blank" title="Facebook" href="#" class="facebook social-icon">
+                                                                <i class="fa fa-facebook"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a target="_blank" title="twitter" href="#" class="twitter social-icon">
+                                                                <i class="fa fa-twitter"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a target="_blank" title="pinterest" href="#" class="pinterest social-icon">
+                                                                <i class="fa fa-pinterest"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a target="_blank" title="linkedin" href="#" class="linkedin social-icon">
+                                                                <i class="fa fa-linkedin"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--start comment in post page -->
+                                <a class="comment" href="#">0 comments</a>
+                                <!--start comment in post page -->
+                            </article>
+                            <article class="blog_single">
+                                <header class="entry-header">
+                                    <span class="post-category">
+                                        <a href="single-blog.php"> Fashion</a>,<a href="#">WordPress</a>
+                                    </span>
+                                    <h2 class="entry-title">
+                                    <a href="#">Post with Audio</a>
+                                    </h2>
+                                    <span class="post-author">
+                                    <span class="post-by"> Posts by : </span> admin </span>
+                                    <span class="post-separator">|</span>
+                                    <span class="post-date"><i class="fas fa-calendar-alt"></i>On May 15, 2018 </span>
+                                </header>
+                                <div class="post-thumbnail">
+                                    <div class="blog-audio">
+                                        <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/347257536&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+                                    </div>
+                                </div>
+                                <div class="postinfo-wrapper">
+                                    <div class="post-info">
+                                        <div class="entry-summary">
+                                            <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue
+                                                condimentum rhoncus. Praesent ornare tortor</p>
+                                            <a href="single-blog.php" class="form-button">Read More</a>
+                                            <div class="social-sharing">
+                                                <div class="widget widget_socialsharing_widget">
+                                                    <h3 class="widget-title">Share this post</h3>
+                                                    <ul class="blog-social-icons">
+                                                        <li>
+                                                            <a target="_blank" title="Facebook" href="#" class="facebook social-icon">
+                                                                <i class="fa fa-facebook"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a target="_blank" title="twitter" href="#" class="twitter social-icon">
+                                                                <i class="fa fa-twitter"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a target="_blank" title="pinterest" href="#" class="pinterest social-icon">
+                                                                <i class="fa fa-pinterest"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a target="_blank" title="linkedin" href="#" class="linkedin social-icon">
+                                                                <i class="fa fa-linkedin"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--start comment in post page -->
+                                <a class="comment" href="#">1 comments</a>
+                                <!--start comment in post page -->
+                            </article>
+                            <article class="blog_single">
+                                <header class="entry-header">
+                                    <span class="post-category">
+                                        <a href="single-blog.php"> Fashion</a>,<a href="#">WordPress</a>
+                                    </span>
+                                    <h2 class="entry-title">
+                                    <a href="#">Post with Video</a>
+                                    </h2>
+                                    <span class="post-author">
+                                    <span class="post-by"> Posts by : </span> admin </span>
+                                    <span class="post-separator">|</span>
+                                    <span class="post-date"><i class="fas fa-calendar-alt"></i>On May 15, 2018 </span>
+                                </header>
+                                <div class="post-thumbnail">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/169507022?title=0&amp;byline=0&amp;portrait=0"></iframe>
+                                    </div>
+                                </div>
+                                <div class="postinfo-wrapper">
+                                    <div class="post-info">
+                                        <div class="entry-summary">
+                                            <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue
+                                                condimentum rhoncus. Praesent ornare tortor</p>
+                                            <a href="single-blog.php" class="form-button">Read More</a>
+                                            <div class="social-sharing">
+                                                <div class="widget widget_socialsharing_widget">
+                                                    <h3 class="widget-title">Share this post</h3>
+                                                    <ul class="blog-social-icons">
+                                                        <li>
+                                                            <a target="_blank" title="Facebook" href="#" class="facebook social-icon">
+                                                                <i class="fa fa-facebook"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a target="_blank" title="twitter" href="#" class="twitter social-icon">
+                                                                <i class="fa fa-twitter"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a target="_blank" title="pinterest" href="#" class="pinterest social-icon">
+                                                                <i class="fa fa-pinterest"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a target="_blank" title="linkedin" href="#" class="linkedin social-icon">
+                                                                <i class="fa fa-linkedin"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--start comment in post page -->
+                                <a class="comment" href="#">1 comments</a>
+                                <!--start comment in post page -->
+                            </article>
+                            <article class="blog_single">
+                                <header class="entry-header">
+                                    <span class="post-category">
+                                        <a href="#"> Fashion</a>,
+                                        <a href="#">WordPress</a>
+                                    </span>
+                                    <h2 class="entry-title">
+                                        <a href="single-blog.php">Blog image post</a>
+                                    </h2>
+                                    <span class="post-author">
+                                    <span class="post-by"> Posts by : </span> admin </span>
+                                    <span class="post-separator">|</span>
+                                    <span class="blog-post-date"><i class="fas fa-calendar-alt"></i>On March 10, 2018 </span>
+                                </header>
+                                <div class="post-thumbnail img-full">
+                                    <a href="single-blog.php">
+                                        <img src="img/blog/blog3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="postinfo-wrapper ">
+                                    <div class="post-info">
+                                        <div class="entry-summary">
+                                            <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue
+                                                condimentum rhoncus. Praesent ornare tortor</p>
+                                            <a href="single-blog.php" class="form-button">Read More</a>
+                                            <div class="social-sharing">
+                                                <div class="widget widget_socialsharing_widget">
+                                                    <h3 class="widget-title">Share this post</h3>
+                                                    <ul class="blog-social-icons">
+                                                        <li>
+                                                            <a target="_blank" title="Facebook" href="#" class="facebook social-icon">
+                                                                <i class="fa fa-facebook"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a target="_blank" title="twitter" href="#" class="twitter social-icon">
+                                                                <i class="fa fa-twitter"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a target="_blank" title="pinterest" href="#" class="pinterest social-icon">
+                                                                <i class="fa fa-pinterest"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a target="_blank" title="linkedin" href="#" class="linkedin social-icon">
+                                                                <i class="fa fa-linkedin"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--start comment in post page -->
+                                <a class="comment" href="#">3 comments</a>
+                                <!--start comment in post page -->
+                            </article>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <!--Pagination Start-->
+                                <div class="product-pagination blog-pagenation">
+		                                <ul>
+		                                    <li class="active"><a href="#">1</a></li>
+		                                    <li><a href="#">2</a></li>
+		                                    <li><a href="#">3</a></li>
+		                                    <li><a href="#">4</a></li>
+		                                    <li><a href="#">5</a></li>
+		                                    <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+		                                </ul>
+		                            </div>
+                                <!--Pagination End-->
+                            </div>
+                        </div>
+		            </div>
+		            <!--Blog Post End-->
+		        </div>
+		    </div>
+		</div>
+		<!--Blog Area End-->
+		<!--Brand Area Start-->
+		<div class="brand-area mb-105">
+		    <div class="container">
+		        <div class="row">
+		            <div class="col-12">
+		                <div class="brand-active">
+		                    <!--Single Brand Start-->
+		                    <div class="single-brand img-full">
+		                      <a href="#"><img src="img/brand/brand1.png" alt=""></a>
+		                    </div>
+		                    <!--Single Brand End-->
+		                    <!--Single Brand Start-->
+		                    <div class="single-brand img-full">
+		                      <a href="#"><img src="img/brand/brand2.png" alt=""></a>
+		                    </div>
+		                    <!--Single Brand End-->
+		                    <!--Single Brand Start-->
+		                    <div class="single-brand img-full">
+		                      <a href="#"><img src="img/brand/brand3.png" alt=""></a>
+		                    </div>
+		                    <!--Single Brand End-->
+		                    <!--Single Brand Start-->
+		                    <div class="single-brand img-full">
+		                      <a href="#"><img src="img/brand/brand4.png" alt=""></a>
+		                    </div>
+		                    <!--Single Brand End-->
+		                    <!--Single Brand Start-->
+		                    <div class="single-brand img-full">
+		                      <a href="#"><img src="img/brand/brand5.png" alt=""></a>
+		                    </div>
+		                    <!--Single Brand End-->
+		                    <!--Single Brand Start-->
+		                    <div class="single-brand img-full">
+		                      <a href="#"><img src="img/brand/brand3.png" alt=""></a>
+		                    </div>
+		                    <!--Single Brand End-->
+		                    <!--Single Brand Start-->
+		                    <div class="single-brand img-full">
+		                      <a href="#"><img src="img/brand/brand4.png" alt=""></a>
+		                    </div>
+		                    <!--Single Brand End-->
+		                    <!--Single Brand Start-->
+		                    <div class="single-brand img-full">
+		                      <a href="#"><img src="img/brand/brand5.png" alt=""></a>
+		                    </div>
+		                    <!--Single Brand End-->
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<!--Brand Area End-->
+
+		<!-- Modal Area Strat -->
+        <div class="modal fade" id="open-modal" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                    <!--Modal Img-->
+                    <div class="col-md-5">
+                        <!--Modal Tab Content Start-->
+                        <div class="tab-content product-details-large" id="myTabContent">
+                          <div class="tab-pane fade show active" id="single-slide1" role="tabpanel" aria-labelledby="single-slide-tab-1">
+                              <!--Single Product Image Start-->
+                              <div class="single-product-img img-full">
+                                <img src="img/single-product/large/single-product1.jpg" alt="">
+                              </div>
+                              <!--Single Product Image End-->
+                          </div>
+                          <div class="tab-pane fade" id="single-slide2" role="tabpanel" aria-labelledby="single-slide-tab-2">
+                              <!--Single Product Image Start-->
+                              <div class="single-product-img img-full">
+                                <img src="img/single-product/large/single-product2.jpg" alt="">
+                              </div>
+                              <!--Single Product Image End-->
+                          </div>
+                          <div class="tab-pane fade" id="single-slide3" role="tabpanel" aria-labelledby="single-slide-tab-3">
+                              <!--Single Product Image Start-->
+                              <div class="single-product-img img-full">
+                                <img src="img/single-product/large/single-product3.jpg" alt="">
+                              </div>
+                              <!--Single Product Image End-->
+                          </div>
+                          <div class="tab-pane fade" id="single-slide4" role="tabpanel" aria-labelledby="single-slide-tab-4">
+                              <!--Single Product Image Start-->
+                              <div class="single-product-img img-full">
+                                <img src="img/single-product/large/single-product4.jpg" alt="">
+                              </div>
+                              <!--Single Product Image End-->
+                          </div>
+                          <div class="tab-pane fade" id="single-slide5" role="tabpanel" aria-labelledby="single-slide-tab-4">
+                              <!--Single Product Image Start-->
+                              <div class="single-product-img img-full">
+                                <img src="img/single-product/large/single-product5.jpg" alt="">
+                              </div>
+                              <!--Single Product Image End-->
+                          </div>
+                          <div class="tab-pane fade" id="single-slide6" role="tabpanel" aria-labelledby="single-slide-tab-4">
+                              <!--Single Product Image Start-->
+                              <div class="single-product-img img-full">
+                                <img src="img/single-product/large/single-product6.jpg" alt="">
+                              </div>
+                              <!--Single Product Image End-->
+                          </div>
+                        </div>
+                        <!--Modal Content End-->
+                        <!--Modal Tab Menu Start-->
+                        <div class="single-product-menu">
+                            <div class="nav single-slide-menu owl-carousel" role="tablist">
+                                <div class="single-tab-menu img-full">
+                                    <a class="active" data-toggle="tab" id="single-slide-tab-1" href="#single-slide1"><img src="img/single-product/small/single-product1.jpg" alt=""></a>
+                                </div>
+                                <div class="single-tab-menu img-full">
+                                    <a data-toggle="tab" id="single-slide-tab-2" href="#single-slide2"><img src="img/single-product/small/single-product2.jpg" alt=""></a>
+                                </div>
+                                <div class="single-tab-menu img-full">
+                                    <a data-toggle="tab" id="single-slide-tab-3" href="#single-slide3"><img src="img/single-product/small/single-product3.jpg" alt=""></a>
+                                </div>
+                                <div class="single-tab-menu img-full">
+                                    <a data-toggle="tab" id="single-slide-tab-4" href="#single-slide4"><img src="img/single-product/small/single-product4.jpg" alt=""></a>
+                                </div>
+                                <div class="single-tab-menu img-full">
+                                    <a data-toggle="tab" id="single-slide-tab-5" href="#single-slide5"><img src="img/single-product/small/single-product5.jpg" alt=""></a>
+                                </div>
+                                <div class="single-tab-menu img-full">
+                                    <a data-toggle="tab" id="single-slide-tab-6" href="#single-slide6"><img src="img/single-product/small/single-product6.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Modal Tab Menu End-->
+                    </div>
+                    <!--Modal Img-->
+                    <!--Modal Content-->
+                    <div class="col-md-7">
+                        <div class="modal-product-info">
+                            <h1>Sit voluptatem</h1>
+                            <div class="modal-product-price">
+                               <span class="old-price">$74.00</span>
+                               <span class="new-price">$69.00</span>
+                           </div>
+                           <a href="single-product.php" class="see-all">See all features</a>
+                           <div class="add-to-cart quantity">
+                                <form class="add-quantity" action="#">
+                                     <div class="modal-quantity">
+                                         <input type="number" value="1">
+                                     </div>
+                                    <div class="add-to-link">
+                                        <button class="form-button" data-text="add to cart">add to cart</button>
+                                    </div>
+                                </form>
+                           </div>
+                           <div class="cart-description">
+                               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco,Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus.</p>
+                           </div>
+                            <div class="social-share">
+                               <h3>Share this product</h3>
+                               <ul class="socil-icon2">
+                                   <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                   <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                   <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                   <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                   <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                               </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Modal Content-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal Area End -->
+	</div>
+
+
+
+<?php
+require_once ("header-footer/footer.php");
+?>

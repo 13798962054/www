@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<style>
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: #000000;
+	margin: 0;
+	font-family: Helvetica, sans-serif;;
+	overflow: hidden;
+}
+
+a {
+	color: #ffffff;
+}
+
+#info {
+	position: absolute;
+	width: 100%;
+	color: #ffffff;
+	padding: 5px;
+	font-family: Monospace;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	z-index: 1;
+}
+
+#menu {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+	font-family: verdana,Tahoma,Arial,Hei,"Microsoft Yahei",SimHei;
+}
+
+.element {
+	width: 120px;
+	height: 160px;
+	box-shadow: 0px 0px 12px rgba(0,255,255,0.5);
+	border: 1px solid rgba(127,255,255,0.25);
+	text-align: center;
+	cursor: default;
+}
+
+.element:hover {
+	box-shadow: 0px 0px 12px rgba(0,255,255,0.75);
+	border: 1px solid rgba(127,255,255,0.75);
+}
+
+	.element .number {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		font-size: 12px;
+		color: rgba(127,255,255,0.75);
+	}
+
+	.element .symbol {
+		position: absolute;
+		top: 40px;
+		left: 0px;
+		right: 0px;
+		font-size: 16px;
+		font-weight: bold;
+		color: rgba(255,255,255,0.75);
+		text-shadow: 0 0 10px rgba(0,255,255,0.95);
+	}
+
+	.element .details {
+		position: absolute;
+		bottom: 15px;
+		left: 0px;
+		right: 0px;
+		font-size: 12px;
+		color: rgba(127,255,255,0.75);
+	}
+
+button {
+	color: rgba(127,255,255,0.75);
+	background: transparent;
+	outline: 1px solid rgba(127,255,255,0.75);
+	border: 0px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+button:hover {
+	background-color: rgba(0,255,255,0.5);
+}
+button:active {
+	color: #000000;
+	background-color: rgba(0,255,255,0.75);
+}
+</style>
+</head>
+<body>
+<script src="js/three.min.js" ></script>
+<script src="js/tween.min.js" ></script>
+<script src="js/TrackballControls.js" ></script>
+<script src="js/CSS3DRenderer.js" ></script>
+
+<div id="container"></div>
+
+<div id="menu">
+<button id="table">表面</button>
+<button id="sphere">球体</button>
+<button id="helix">螺旋</button>
+<button id="grid">网格</button>
+</div>
+
+<script>
+
+var table = [
+	"巨细胞病毒抗原", "BA109VS", "1mg；5mg；10mg", 1, 1,
+	"弓形虫抗原", "BA110VS", "1mg；5mg；10mg", 18, 1,
+	"风疹病毒抗原", "BA129G2VS", "1mg；5mg；10mg", 1, 2,
+	"单纯疱疹病毒（1型）抗原", "BA1051VS", "1mg；5mg；10mg", 2, 2,
+	"单纯疱疹病毒（1型）糖蛋白G", "BA1051RVS-G", "1mg；5mg；10mg", 13, 2,
+	"单纯疱疹病毒（2型）抗原", "BA1052VS", "1mg；5mg；10mg", 14, 2,
+	"单纯疱疹病毒（2型）糖蛋白G", "BA1052RVS-G", "1mg；5mg；10mg", 15, 2,
+	"肺炎支原体抗原", "BA127VS", "1mg；5mg；10mg", 16, 2,
+	"肺炎支原体粘附蛋白P1", "BA127VSP1", "1mg；5mg；10mg", 17, 2,
+	"肺炎衣原体抗原（优质）", "BA1371VS", "1mg；5mg；10mg", 18, 2,
+	"肺炎衣原体抗原", "BA1371VSER", "1mg；5mg；10mg", 1, 3,
+	"呼吸道合胞病毒抗原", "BA113VS", "1mg；5mg；10mg", 2, 3,
+	"腺病毒2型六联体蛋白", "BA128VS", "1mg；5mg；10mg", 13, 3,
+	"副流感病毒（1型）抗原", "BA1261VS", "1mg；5mg；10mg", 14, 3,
+	"副流感病毒（2型）抗原", "BA1262VS", "1mg；5mg；10mg", 15, 3,
+	"副流感病毒（3型）抗原", "BA1263VS", "1mg；5mg；10mg", 16, 3,
+	"嗜肺军团菌抗原", "BA106VS", "1mg；5mg；10mg", 17, 3,
+	"百日咳杆菌丝状血凝素", "BA120VS3", "1mg；5mg；10mg", 18, 3,
+	"百日咳毒素", "BA120VS4", "1mg；5mg；10mg", 1, 4,
+	"百日咳全细胞抗原", "BA120VS8", "1mg；5mg；10mg", 2, 4,
+	"腮腺炎病毒抗原", "BA103VS", "1mg；5mg；10mg", 3, 4,
+	"柯萨奇病毒抗原", "BA134VS01", "1mg；5mg；10mg", 4, 4,
+	"埃可病毒抗原	", "BA135VS01", "1mg；5mg；10mg", 5, 4,
+	"肠道病毒抗原	", "BA133VS01", "1mg；5mg；10mg", 6, 4,
+	"细小病毒B19非结构蛋白NS1", "BA122VSNS1", "1mg；5mg；10mg", 7, 4,
+	"细小病毒B19 PepA蛋白（VP1 aa 1-230）", "BA122VSVP1A", "1mg；5mg；10mg", 8, 4,
+	"细小病毒B19 PepB蛋白（VP1 aa 485-781）", "BA122VSVP1B", "1mg；5mg；10mg", 9, 4,
+	"细小病毒B19 PepC蛋白（VP1 aa 1-486", "BA122VSVP1C", "1mg；5mg；10mg", 10, 4,
+	"细小病毒B19 PepD蛋白（VP1 aa 313-781）", "BA122VSVP1D", "1mg；5mg；10mg", 11, 4,
+	"细小病毒B19 VP1蛋白（aa 1-781）", "BA122VSVP1", "1mg；5mg；10mg", 12, 4,
+	"细小病毒B19 VP2蛋白（aa 233-781）", "BA122VSVP1E", "1mg；5mg；10mg", 13, 4,
+	"细小病毒B19 VP2蛋白（aa 228-781）", "BA122VSVP2", "1mg；5mg；10mg", 14, 4,
+	"EB病毒衣壳蛋白P18", "BA1361R01", "1mg；5mg；10mg", 15, 4,
+	"EB病毒衣壳蛋白P23", "BA1361VSR21", "1mg；5mg；10mg", 16, 4,
+	"EB病毒早期蛋白P138", "BA1363VSR6", "1mg；5mg；10mg", 17, 4,
+	"EB病毒早期蛋白P54", "BA1363P54VS", "1mg；5mg；10mg", 18, 4,
+	"EB病毒核蛋白EBNA1 P72", "BA1362VS", "1mg；5mg；10mg", 1, 5,
+	"白色念珠菌抗原", "BA117VS", "1mg；5mg；10mg", 2, 5,
+	"幽门螺旋杆菌抗原", "BA118VS", "1mg；5mg；10mg", 3, 5,
+	"麻疹病毒抗原（优质）", "BA102VS", "1mg；5mg；10mg", 4, 5,
+	"麻疹病毒抗原", "BA102VS", "1mg；5mg；10mg", 5, 5,
+	"轮状病毒抗原", "BA1193VS", "1mg；5mg；10mg", 6, 5,
+	"水痘-带状疱疹病毒抗原", "BA104VS", "1mg；5mg；10mg", 7, 5,
+	"水痘-带状疱疹病毒糖蛋白抗原", "BA104VSG", "1mg；5mg；10mg", 8, 5,
+	"流产嗜性衣原体抗原", "BA1373VSER", "1mg；5mg；10mg", 9, 5,
+	"沙眼衣原体抗原", "BA1372VSER", "1mg；5mg；10mg", 10, 5,
+	"沙眼衣原体主要外膜蛋白", "BA1372VSR2", "1mg；5mg；10mg", 11, 5,
+	"耶尔森菌（O:3血清型）抗原", "BA138VS", "1mg；5mg；10mg", 12, 5,
+	"耶尔森菌（O:8血清型）抗原", "BA13808VS", "1mg；5mg；10mg", 13, 5,
+	"耶尔森菌（O:9血清型）抗原", "BA13809VS", "1mg；5mg；10mg", 14, 5,
+	"空肠弯曲杆菌抗原", "BA139VS", "1mg；5mg；10mg", 15, 5,
+	"布鲁氏杆菌抗原", "BA116VS", "1mg；5mg；10mg", 16, 5,
+	"阿弗西尼疏螺旋体抗原", "BA121VS", "1mg；5mg；10mg", 17, 5,
+	"伽氏疏螺旋体抗原", "BA121GVS", "1mg；5mg；10mg", 18, 5,
+	"阿弗西尼疏螺旋体（Pko株）核心结合蛋白A（DbpA）", "BA121R01", "1mg；5mg；10mg", 1, 6,
+	"阿弗西尼疏螺旋体（Pko株）外膜蛋白C（OspC）", "BA121R02", "1mg；5mg；10mg", 2, 6,
+	"双曲钩端螺旋体抗原", "BA125VS", "1mg；5mg；10mg", 4, 9,
+	"细粒棘球绦虫抗原", "BA107VS", "1mg；5mg；10mg", 5, 9,
+	"森林脑炎病毒抗原（优质）", "BA112VS", "1mg；5mg；10mg", 6, 9,
+	"森林脑炎病毒抗原", "BA112VSL", "1mg；5mg；10mg", 7, 9,
+	"基孔肯雅病毒糖蛋白E1", "BA148R2", "1mg；5mg；10mg", 8, 9,
+	"基孔肯雅病毒（(A226V突变体）糖蛋白E1", "BA148R3", "1mg；5mg；10mg", 9, 9,
+	"基孔肯雅病毒糖蛋白E2", "BA148R1", "1mg；5mg；10mg", 10, 9,
+	"抗巨细胞病毒单抗", "MAB109.001", "1mg；5mg；10mg", 11, 9,
+	"抗巨细胞病毒单抗", "MAB109.002", "1mg；5mg；10mg", 12, 9,
+	"抗弓形虫单抗", "MAB110.001", "1mg；5mg；10mg", 13, 9,
+	"抗单纯疱疹病毒1+2型单抗", "MAB105.001", "1mg；5mg；10mg", 14, 9,
+	"抗水痘带状疱疹病毒单抗", "MAB104.001", "1mg；5mg；10mg", 15, 9,
+	"抗水痘带状疱疹病毒单抗", "MAB104.002", "1mg；5mg；10mg", 16, 9,
+	"抗风疹病毒单抗", "MAB129.001", "1mg；5mg；10mg", 17, 9,
+	"抗风疹病毒单抗", "MAB129.002", "1mg；5mg；10mg", 18, 9,
+	"抗麻疹病毒单抗", "MAB102.001", "1mg；5mg；10mg", 4, 6,
+	"抗流行性腮腺炎单抗", "MAB103.001", "1mg；5mg；10mg", 5, 6,
+	"抗流行性腮腺炎单抗", "MAB103.002", "1mg；5mg；10mg", 6, 6,
+	"抗EB病毒 VCA P18单抗", "MAB1361.001", "1mg；5mg；10mg", 7, 6,
+	"抗肺炎衣原体单抗", "MAB1371.001", "1mg；5mg；10mg", 8, 6,
+	"抗肺炎支原体单抗", "MAB127.001", "1mg；5mg；10mg", 9, 6,
+	"抗寨卡病毒单抗", "MAB149.001", "1mg；5mg；10mg", 10, 6,
+	"抗登革热单抗", "MAB114.001", "1mg；5mg；10mg", 11, 6,
+	"百日咳杆菌毒素 IgA质控品", "BC1201A", "1mg；5mg；10mg", 12, 6,
+	"百日咳杆菌毒素 IgA质控品", "BC1201G", "1mg；5mg；10mg", 13, 6,
+	"百日咳杆菌 IgA质控品", "BC120A", "1mg；5mg；10mg", 14, 6,
+	"百日咳杆菌 IgG质控品", "BC120G", "1mg；5mg；10mg", 15, 6,
+	"白喉杆菌 IgG抗体检测质控品", "BC130G", "1mg；5mg；10mg", 16, 6,
+	"麻疹病毒 IgG抗体检测质控品", "BC102G", "1mg；5mg；10mg", 17, 6,
+	"麻疹病毒 IgM抗体检测质控品", "BC102M", "1mg；5mg；10mg", 18, 6,
+	"腮腺炎病毒 IgG抗体检测质控品", "BC103G", "1mg；5mg；10mg", 1, 7,
+	"腮腺炎病毒 IgM抗体检测质控品", "BC103M", "1mg；5mg；10mg", 2, 7,
+	"风疹病毒 IgG抗体检测质控品", "BC129G", "1mg；5mg；10mg", 4, 10,
+	"风疹病毒 IgM抗体检测质控品", "BC129M", "1mg；5mg；10mg", 5, 10,
+	"破伤风杆菌 IgG抗体检测质控品", "BC108G", "1mg；5mg；10mg", 6, 10,
+	"水痘-带状疱疹病毒 IgA质控品", "BC104A", "1mg；5mg；10mg", 7, 10,
+	"", "", "1mg；5mg；10mg", 8, 10,
+	"", "", "1mg；5mg；10mg", 9, 10,
+	"", "", "1mg；5mg；10mg", 10, 10,
+	"", "", "1mg；5mg；10mg", 11, 10,
+	"", "", "1mg；5mg；10mg", 12, 10,
+	"", "", "1mg；5mg；10mg", 13, 10,
+	"", "", "1mg；5mg；10mg", 14, 10,
+	"", "", "1mg；5mg；10mg", 15, 10,
+	"", "", "1mg；5mg；10mg", 16, 10,
+	"", "", "1mg；5mg；10mg", 17, 10,
+	"", "", "1mg；5mg；10mg", 18, 10,
+	"", "", "1mg；5mg；10mg", 4, 7,
+	"", "", "1mg；5mg；10mg", 5, 7,
+	"", "", "1mg；5mg；10mg", 6, 7,
+	"", "", "1mg；5mg；10mg", 7, 7,
+	"", "", "1mg；5mg；10mg", 8, 7,
+	"", "", "1mg；5mg；10mg", 9, 7,
+	"", "", "1mg；5mg；10mg", 10, 7,
+	"", "", "1mg；5mg；10mg", 11, 7,
+	"", "", "1mg；5mg；10mg", 12, 7,
+	"", "", "1mg；5mg；10mg", 13, 7,
+	"", "", "1mg；5mg；10mg", 14, 7,
+	"", "", "1mg；5mg；10mg", 15, 7,
+	"", "", "1mg；5mg；10mg", 16, 7,
+	"", "", "1mg；5mg；10mg", 17, 7,
+	"", "", "1mg；5mg；10mg", 18, 7
+];
+
+var camera, scene, renderer;
+var controls;
+
+var objects = [];
+var targets = { table: [], sphere: [], helix: [], grid: [] };
+
+init();
+animate();
+
+function init() {
+
+	camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 10000 );
+	camera.position.z = 3000;
+
+	scene = new THREE.Scene();
+
+	// table
+	for ( var i = 0; i < table.length; i += 5 ) {
+
+		var element = document.createElement( 'div' );
+		element.className = 'element';
+		element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
+
+		var number = document.createElement( 'div' );
+		number.className = 'number';
+		number.textContent = (i/5) + 1;
+		element.appendChild( number );
+
+		var symbol = document.createElement( 'div' );
+		symbol.className = 'symbol';
+		symbol.textContent = table[ i ];
+		element.appendChild( symbol );
+        //为元素监听点击事件
+        element.addEventListener("click", function () {
+            // console.log(this.getElementsByClassName("symbol")[0].innerText)
+            localStorage.setItem("products", JSON.stringify([1, 1]));
+            top.window.location.href = "../products.php"
+        })
+
+		var details = document.createElement( 'div' );
+		details.className = 'details';
+		details.innerHTML = table[ i + 1 ] + '<br>' + table[ i + 2 ];
+		element.appendChild( details );
+
+		var object = new THREE.CSS3DObject( element );
+		object.position.x = Math.random() * 4000 - 2000;
+		object.position.y = Math.random() * 4000 - 2000;
+		object.position.z = Math.random() * 4000 - 2000;
+		scene.add( object );
+
+		objects.push( object );
+
+		//
+
+		var object = new THREE.Object3D();
+		object.position.x = ( table[ i + 3 ] * 140 ) - 1330;
+		object.position.y = - ( table[ i + 4 ] * 180 ) + 990;
+
+		targets.table.push( object );
+
+	}
+
+	// sphere
+
+	var vector = new THREE.Vector3();
+
+	for ( var i = 0, l = objects.length; i < l; i ++ ) {
+
+		var phi = Math.acos( -1 + ( 2 * i ) / l );
+		var theta = Math.sqrt( l * Math.PI ) * phi;
+
+		var object = new THREE.Object3D();
+
+		object.position.x = 800 * Math.cos( theta ) * Math.sin( phi );
+		object.position.y = 800 * Math.sin( theta ) * Math.sin( phi );
+		object.position.z = 800 * Math.cos( phi );
+
+		vector.copy( object.position ).multiplyScalar( 2 );
+
+		object.lookAt( vector );
+
+		targets.sphere.push( object );
+
+	}
+
+	// helix
+
+	var vector = new THREE.Vector3();
+
+	for ( var i = 0, l = objects.length; i < l; i ++ ) {
+
+		var phi = i * 0.175 + Math.PI;
+
+		var object = new THREE.Object3D();
+
+		object.position.x = 900 * Math.sin( phi );
+		object.position.y = - ( i * 8 ) + 450;
+		object.position.z = 900 * Math.cos( phi );
+
+		vector.x = object.position.x * 2;
+		vector.y = object.position.y;
+		vector.z = object.position.z * 2;
+
+		object.lookAt( vector );
+
+		targets.helix.push( object );
+
+	}
+
+	// grid
+
+	for ( var i = 0; i < objects.length; i ++ ) {
+
+		var object = new THREE.Object3D();
+
+		object.position.x = ( ( i % 5 ) * 400 ) - 800;
+		object.position.y = ( - ( Math.floor( i / 5 ) % 5 ) * 400 ) + 800;
+		object.position.z = ( Math.floor( i / 25 ) ) * 1000 - 2000;
+
+		targets.grid.push( object );
+
+	}
+
+	//
+
+	renderer = new THREE.CSS3DRenderer();
+	renderer.setSize( window.innerWidth, window.innerHeight );
+	renderer.domElement.style.position = 'absolute';
+	document.getElementById( 'container' ).appendChild( renderer.domElement );
+
+	//
+
+	controls = new THREE.TrackballControls( camera, renderer.domElement );
+	controls.rotateSpeed = 0.5;
+	controls.minDistance = 500;
+	controls.maxDistance = 6000;
+	controls.addEventListener( 'change', render );
+
+	// 监听表面按钮点击事件
+	var button = document.getElementById( 'table' );
+	button.addEventListener( 'click', function ( event ) {
+
+		transform( targets.table, 2000 );
+
+	}, false );
+
+	var button = document.getElementById( 'sphere' );
+	button.addEventListener( 'click', function ( event ) {
+
+		transform( targets.sphere, 2000 );
+
+	}, false );
+
+	var button = document.getElementById( 'helix' );
+	button.addEventListener( 'click', function ( event ) {
+
+		transform( targets.helix, 2000 );
+
+	}, false );
+
+	var button = document.getElementById( 'grid' );
+	button.addEventListener( 'click', function ( event ) {
+
+		transform( targets.grid, 2000 );
+
+	}, false );
+
+    // 默认显示球体状态
+	transform( targets.sphere, 5000 );
+
+	//
+
+	window.addEventListener( 'resize', onWindowResize, false );
+
+
+
+}
+
+function transform( targets, duration ) {
+
+	TWEEN.removeAll();
+
+	for ( var i = 0; i < objects.length; i ++ ) {
+
+		var object = objects[ i ];
+		var target = targets[ i ];
+
+		new TWEEN.Tween( object.position )
+			.to( { x: target.position.x, y: target.position.y, z: target.position.z }, Math.random() * duration + duration )
+			.easing( TWEEN.Easing.Exponential.InOut )
+			.start();
+
+		new TWEEN.Tween( object.rotation )
+			.to( { x: target.rotation.x, y: target.rotation.y, z: target.rotation.z }, Math.random() * duration + duration )
+			.easing( TWEEN.Easing.Exponential.InOut )
+			.start();
+
+	}
+
+	new TWEEN.Tween( this )
+		.to( {}, duration * 2 )
+		.onUpdate( render )
+		.start();
+
+}
+
+function onWindowResize() {
+
+	camera.aspect = window.innerWidth / window.innerHeight;
+	camera.updateProjectionMatrix();
+
+	renderer.setSize( window.innerWidth, window.innerHeight );
+
+	render();
+
+}
+
+function animate() {
+
+	requestAnimationFrame( animate );
+
+	TWEEN.update();
+
+	controls.update();
+
+}
+
+function render() {
+
+	renderer.render( scene, camera );
+
+}
+
+</script>
+</body>
+</html>

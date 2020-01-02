@@ -1,0 +1,173 @@
+
+
+.ksh {
+    height: 100%;
+    padding: 15px;
+    overflow: hidden;
+    position: relative;
+    z-index: -2
+}
+
+.visual {
+    background: #FFF;
+    background-size: cover;
+    height: calc(100% - 33px);
+    padding-top: 10px;
+}
+
+
+.visual_con {
+    margin: 0 auto;
+    width: calc(100% - 43px);
+    height: 100%;
+    float: left;
+    padding: 25px 20px 0
+}
+
+.visual_con .visual_conTop {
+    height: 130px;
+    margin-bottom: 10px
+}
+
+.visual_con .visual_conTop .visual_conTop_box {
+    height: 100%;
+    padding: 0 3px
+}
+
+.visual_con .visual_conTop .visual_conTop1 {
+    width: 20%;
+    height: 100%;
+    float: left
+}
+
+.visual_con .visual_conTop .visual_conTop2 {
+    width: 30%;
+    height: 100%;
+    float: left
+}
+
+
+.visual_con .visual_conTop .visual_conTop_box > div {
+    height: 100%
+}
+
+.visual_con .visual_conTop .visual_conTop_box > div h3 {
+    color: #fff;
+    font-size: 16px;
+    padding: 16px 0 0 20px
+}
+
+.visual_con .visual_conTop .visual_conTop_box > div p {
+    width: 33%;
+    float: left;
+    line-height: 85px;
+    color: #20dbfd;
+    text-shadow: 0 0 25px #00d8ff;
+    font-size: 46px;
+    font-family: yjsz;
+    text-align: right
+}
+
+.visual_con .visual_conTop .visual_conTop_box > div .conTop_smil {
+    width: 67%;
+    height: 60px;
+    float: left;
+    padding-top: 23px
+}
+
+.visual_con .visual_conTop .visual_conTop_box > div .conTop_smil a {
+    display: block;
+    line-height: 20px;
+    text-align: left;
+    color: #fff;
+    padding-left: 9px
+}
+
+.visual_con .visual_conTop .visual_conTop_box > div .conTop_smil span {
+    width: 32px;
+    display: inline-block;
+    margin-left: 3px
+}
+
+.visual_con .visual_conTop .visual_conTop_box > div .conTop_smil a.sz {
+    color: #fe3e12
+}
+
+.visual_con .visual_conTop .visual_conTop_box > div .conTop_smil a.xd {
+    color: #12fe81
+}
+
+.visual_con .visual_conTop .visual_conTop_box > div .conTop_smil a.null {
+    visibility: hidden
+}
+
+.visual_con .visual_conBot {
+    height: calc(100% - 136px);
+    background: url(../images/ksh41.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative
+}
+
+.visual_con .visual_conBot > img {
+    position: absolute;
+    width: 25px;
+    height: 25px
+}
+
+.visual_con .visual_conBot .visual_conBot_l {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.visual_con .visual_conBot .visual_conBot_2 {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.visual_con .visual_conBot .visual_conBot_3 {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.visual_con .visual_conBot .visual_conBot_4 {
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+
+.visual_con .visual_conBot .visual_chart {
+    width: 100%;
+    height: 100%;
+    position: absolute
+}
+
+.visual_con .visual_conBot .visual_chart_text {
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 99
+}
+
+.visual_con .visual_conBot .visual_chart_text h1 {
+    font-size: 26px;
+    margin-bottom: 6px
+}
+
+.visual_con .visual_conBot .visual_chart_text h2 {
+    font-size: 20px
+}
+
+.visual_con .visual_conBot .visual_conBot_bot {
+    width: calc(100% - 8px);
+    height: 180px;
+    background: rgba(16, 54, 87, .5);
+    border: 1px solid #345f92;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    z-index: 99
+}

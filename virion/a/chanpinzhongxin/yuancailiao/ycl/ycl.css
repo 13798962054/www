@@ -1,0 +1,43 @@
+table.hovertable {
+    font-family: verdana,arial,sans-serif;
+    font-size:1.5em;
+    color:#333333;
+    border-width: 1px;
+    border-color: #999999;
+    border-collapse: collapse;
+}
+table.hovertable th {
+    background-color:#c3dde0;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #a9c6c9;
+}
+table.hovertable tr {
+    background-color:#d4e3e5;
+}
+table.hovertable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #a9c6c9;
+    text-align: left;
+}
+
+
+
+.title {
+    display: block;
+    padding-top: 20px;
+    color: #0aa;
+    font-size: 64px;
+    letter-spacing: 10px;
+    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135
+}
+.subtitle {
+    display: block;
+    padding: 40px 0px;
+    font-size: 30px;
+    color: #00994C;
+    text-shadow: 0px 1px 0px #999, 0px 1px 0px #888, 0px 1px 5px #777, 0px 1px 0px #666, 0px 1px 0px #555, 0px 1px 0px #444, 0px 1px 0px #333, 0px 1px 1px #001135
+}

@@ -1,0 +1,73 @@
+@charset "utf-8";
+/*reset: 重设外观 */
+body {background-color:#fff;color: #fff;}
+a { color: #222; text-decoration: none; border: 0; background-color: transparent;}
+a:hover,a:active { text-decoration: none; }
+body,div,q,iframe,form,
+ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6{ margin: 0; padding: 0;}
+fieldset{border: none 0;}
+a img{ border:none 0;}
+body,td,textarea{word-break: break-all; line-height:1.5;}
+body,input,textarea,select,button{margin: 0 auto; font-size: 12px;font-family: "微软雅黑", SimSun, sans-serif;}
+div,p,table,th,td{ font-size:1em; font-family:inherit; line-height:inherit;}
+sup{ vertical-align:text-top; font-size:10px; }
+sub{ vertical-align:text-bottom; font-size:10px; }
+
+ul,dl,li{list-style: none;font-family:"微软雅黑";}
+/*em,i,u,q,s,dl,caption{ font-style: normal; font-weight: normal; text-decoration: none; }*/
+hr{ clear:both; margin:7px 0; +margin: 0;  border:0 none;font-size: 1px; line-height:1px;color: #ddd; background-color:#ddd; height: 1px;}
+h1,h2,h3,h4,h5,h6{color:#333}
+h1 { font-size: 24px; font-family:"Microsoft YaHei", SIMHEI, sans-serif; font-weight: normal;}
+h2 { font-size: 20px; font-family:"Microsoft YaHei", SIMHEI, sans-serif; font-weight: normal;}
+h3 { font-size: 16px; font-family:"Microsoft YaHei", Arial, sans-serif; font-weight: bold;}
+h4 { font-size: 14px; font-family:"Microsoft YaHei", Arial, sans-serif; font-weight: bold;}
+h5 { font-size: 13px; font-family:"Microsoft YaHei", SIMSUN, sans-serif; font-weight: bold;}
+h6 { font-size: 12px; font-family:"Microsoft YaHei", SIMSUN, sans-serif;font-weight: bold;}
+em,i{color:#000000;}
+p{text-align: justify; text-justify: inter-ideograph; margin-top:0.5em; margin-bottom:1em;}
+textarea {line-height:1.4;}
+
+* html textarea,*+html textarea {overflow:auto; overflow-x: hidden; }/*使多行文本框不显示默认的竖向滚动条*/
+* html iframe, * html frame {overflow:auto; }/*使浮动窗口不显示默认的竖向滚动条*/
+* html input {overflow: hidden; }/*使按钮文字不溢出*/
+/*end reset*/
+
+/*Global:常用样式*/
+.fl{ float:left; _display:inline;}
+.fr{ float:right; _display:inline;}
+.clearfix{display: block; display: table; *display: inline-block; _height: 1%;}
+.clearfix:after {content:'\20'; display:block; clear:both;}
+.clearself{ overflow:hidden; _overflow:visible; _height:1%;}
+.inline-block{display:inline-block;*zoom: 1;*display: inline;vertical-align:middle;overflow:hidden;}
+.justify{ text-align: justify; text-justify: inter-ideograph;}
+/*end Global*/
+
+body{ background:#FFF; text-align:center; color:#747474;}
+.bodyWidth,.pageWidth{ width:1013px; margin:0 auto; clear:both;}
+.main,.footer{padding-right:13px;}
+
+.header .navall{height:90px; width:751px;}
+.header .nav{ background:url(../images/navbg.jpg) no-repeat left bottom; height:56px; width:751px;}
+.header .navbg{ height:98px;}
+.header .logo{ height:71px; width:188px; padding-top:17px;}
+.header .c_or_en{ text-align:right; padding-right:30px; height:34px; line-height:34px;}
+.header .en{ color:#156CCA;}
+.header .nav ul{ width:500px; height:39px; line-height:39px; float:left;}
+.header .nav ul li{ float:left; height:39px; line-height:39px; width: 80px; text-align: center;background:url(../images/nav_line.png) no-repeat center right; position:relative; z-index:1000;}
+.header .nav ul li.onlywidth { width: 105px;}
+.header .nav ul li a{height:39px; line-height:39px; font-size:14px; color:#FFFFFF; display:block; text-decoration:none;}
+.header .nav ul li.noline{ background:none;}
+.header .nav .search{ width:220px; overflow:hidden; margin: 7px 0; text-align:right; padding-right: 13px;}
+.header .nav .search input.seartext{ vertical-align:middle; border:none; height:24px; line-height:24px; width:165px; background:url(../images/searchtextbg.jpg) repeat-x center left;}
+.header .nav .search input.searbtn{ vertical-align:middle; border:none; color:#FFFFFF; height:24px; line-height:24px; width:42px; background:url(../images/searchbg.jpg) no-repeat center right; }
+.header .nav ul li a.current{ background:url(../images/navcurrent.jpg) center bottom no-repeat; font-weight:bold;}
+
+.footer{ height:70px; background:url(../images/footerbg.gif) no-repeat 0 0;}
+.footer .f_content{ height:35px; line-height:35px;}
+
+#menuu ul li ul {display:none; position:absolute;  z-index:9999; left:0px; top:39px; text-align:left;}
+#menuu ul li ul li { float:none; margin:0; border-bottom:1px solid #0087fe; text-align: left; height: 25px; line-height: 25px; width:106px;}
+#menuu ul li ul li a { background:#1d4eb6; font-size:12px; font-weight:normal; height: 25px; line-height: 25px; padding:0px 10px; text-align:left; width:auto;}
+#menuu ul li ul li a:hover{ font-weight: bold;}
+#menuu ul li:hover ul { display:block;}
+#menuu ul li.sfhover ul { display:block;}

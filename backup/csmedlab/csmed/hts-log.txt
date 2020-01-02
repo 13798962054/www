@@ -1,0 +1,24 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 27 Dec 2019 10:22:43 at http://www.csmedlab.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://www.csmedlab.com/ -O1 "E:\owen\software\wamp\Apache24\htdocs\backup\csmedlab\csmed" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:27:35	Warning: 	Retry after error -4 (Incorrect length (443765 Bytes, 1642207 expected)) at link img.bj.wezhan.cn/content/sitefiles/2016084/images/6999073_5.png (from www.csmedlab.com/)
+10:27:35	Warning: 	Retry after error -4 (Incorrect length (471992 Bytes, 991682 expected)) at link img.bj.wezhan.cn/content/sitefiles/2016084/images/7000106_21.png (from www.csmedlab.com/)
+10:39:38	Error: 	"Not Found" (404) at link img.bj.wezhan.cn/Plugins/Designer/Content/images/select_bg.gif (from img.bj.wezhan.cn/Plugins/Designer/Content/css/base.pc.css)
+10:39:44	Error: 	"Not Found" (404) at link www.csmedlab.com/Runtime/NewcomevVisits (from www.csmedlab.com/newsitem/278443485)
+10:39:44	Warning: 	Retry after error -4 (Incorrect length (927647 Bytes, 1407963 expected)) at link img.bj.wezhan.cn/content/sitefiles/2016084/images/13115723_3.png (from www.csmedlab.com/newsitem/278432420)
+10:39:44	Error: 	"Not Found" (404) at link www.virion-serion.net/uploads/allimg/190426/1-1Z4261JR1314.png (from www.csmedlab.com/newsitem/278371247)
+10:39:44	Error: 	"Not Found" (404) at link www.virion-serion.net/uploads/allimg/190426/1-1Z4261K932413.png (from www.csmedlab.com/newsitem/278371247)
+10:42:30	Warning: 	Retry after error -4 (Connect Error) at link www.csmedlab.com/newsitem/278233954 (from www.csmedlab.com/newsitem/278237345)
+10:49:37	Warning: 	Retry after error -4 (Incorrect length (752268 Bytes, 867419 expected)) at link img.bj.wezhan.cn/content/sitefiles/2016084/images/10921500_1506046835.jpeg (from www.csmedlab.com/newsitem/278041340)
+10:54:40	Warning: 	Retry after error -4 (No data (connection closed)) at link img.bj.wezhan.cn/content/sitefiles/2016084/images/9680273_17-1.png (from www.csmedlab.com/newsitem/277883492)
+10:58:22	Warning: 	Retry after error -5 (Unable to get server's address: 请求的名称有效，但是找不到请求的类型的数据。 ) at link www.qingfengbio.com/news/pics/20160819/201608191471574578718.jpg (from www.csmedlab.com/newsitem/277630311)
+10:58:22	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link www.qingfengbio.com/news/pics/20160819/201608191471574578718.jpg (from www.csmedlab.com/newsitem/277630311)
+10:58:23	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link www.qingfengbio.com/news/pics/20160819/201608191471574578718.jpg (from www.csmedlab.com/newsitem/277630311)
+
+HTTrack Website Copier/3.49-2 mirror complete in 40 minutes 42 seconds : 538 links scanned, 523 files written (89996130 bytes overall) [61144923 bytes received at 25038 bytes/sec], 33107461 bytes transferred using HTTP compression in 214 files, ratio 11%, 2.4 requests per connection
+(5 errors, 8 warnings, 0 messages)

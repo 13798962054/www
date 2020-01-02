@@ -1,0 +1,135 @@
+.tx-download-explorer ul {
+	list-style: none;
+	padding-left: 23px;
+}
+
+.tx-download-explorer .filetype {
+	/*background: url(../Images/fileicons.png) no-repeat top left;*/
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+}
+
+li .folder-icon{
+	background: url("../Images/Icons/folder-closed.svg") no-repeat top left;
+	position: relative;
+	cursor:pointer;
+	top: 5px;
+	left: 20px;
+	margin-right: 20px;
+}
+li .folder-icon:before{
+	content:'';
+	display: inline-block;
+	width: 0;
+	height: 0;
+	position: relative;
+	left: -20px;
+	top: -6px;
+	border-style: solid;
+	border-width: 6px 0 6px 10px;
+	border-color: transparent transparent transparent #d8d8d8;
+}
+/* Initial */
+li.selected.is-active{
+	font-weight: 700;
+}
+li.level-1 > .folder-icon,
+li.selected.is-active > .folder-icon,
+li.level-2.is-active > .folder-icon,
+li.level-3.is-active > .folder-icon,
+li.sub-active > .folder-icon
+{
+	background: url("../Images/Icons/folder.svg") no-repeat top left;
+	font-weight: 700;
+}
+
+li.level-1 > .folder-icon:before,
+li.selected.is-active > .folder-icon:before,
+li.level-2.is-active > .folder-icon:before,
+li.level-3.is-active > .folder-icon:before,
+li.sub-active > .folder-icon:before {
+	border-width: 10px 6px 0 6px;
+	border-color: #702283 transparent transparent transparent;
+}
+li.last-ul .folder-icon:before,
+li.last-ul.selected  > .folder-icon:before{
+	border:none;
+}
+
+.tx-download-explorer .newfile { background-position: -520px 0; width: 24px; height: 24px; }
+
+.tx-download-explorer .filetype-0_unknown{ background-position: 0 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-aac{ background-position: -26px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-ai{ width: 24px; height: 24px; background: url("../Images/Icons/imageicon.svg") no-repeat top left;}
+.tx-download-explorer .file:hover .filetype-ai{ width: 24px; height: 24px; background: url("../Images/Icons/imageicon-white.svg") no-repeat top left;}
+.tx-download-explorer .filetype-aiff{ background-position: -78px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-asp{ background-position: -104px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-avi{ background-position: -130px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-bmp{ width: 24px; height: 24px; background: url("../Images/Icons/imageicon.svg") no-repeat top left; }
+.tx-download-explorer .file:hover .filetype-bmp{ width: 24px; height: 24px; background: url("../Images/Icons/imageicon-white.svg") no-repeat top left; }
+.tx-download-explorer .filetype-c{ background-position: -182px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-cpp{ background-position: -208px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-css{ background-position: -234px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-dat{ background-position: -260px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-dmg{ background-position: -286px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-doc{ background-position: -312px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-docx{ background-position: -338px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-dot{ background-position: -364px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-dotx{ background-position: -390px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-dwg{ background-position: -416px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-dxf{ background-position: -442px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-eps{ width: 24px; height: 24px; background: url("../Images/Icons/imageicon.svg") no-repeat top left;}
+.tx-download-explorer .file:hover .filetype-eps{ width: 24px; height: 24px; background: url("../Images/Icons/imageicon-white.svg") no-repeat top left;}
+.tx-download-explorer .filetype-exe{ background-position: -494px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-flv{ background-position: -546px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-gif{ width: 24px; height: 24px; background: url("../Images/Icons/imageicon.svg") no-repeat top left;}
+.tx-download-explorer .file:hover .filetype-gif{ width: 24px; height: 24px; background: url("../Images/Icons/imageicon-white.svg") no-repeat top left;}
+.tx-download-explorer .filetype-h{ background-position: -624px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-html{ background-position: -650px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-ics{ background-position: -676px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-iso{ background-position: -702px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-java{ background-position: -728px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-jpg{ width: 24px; height: 24px; background: url("../Images/Icons/imageicon.svg") no-repeat top left;}
+.tx-download-explorer .file:hover .filetype-jpg{ width: 24px; height: 24px; background: url("../Images/Icons/imageicon-white.svg") no-repeat top left;}
+.tx-download-explorer .filetype-key{ background-position: -780px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-m4v{ background-position: -806px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-mid{ background-position: -832px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-mov{ background-position: -858px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-mp3{ background-position: -884px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-mp4{ background-position: -910px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-mpg{ background-position: -936px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-odp{ background-position: -962px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-ods{ background-position: -988px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-odt{ background-position: -1014px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-otp{ background-position: -1040px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-ots{ background-position: -1066px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-ott{ background-position: -1092px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-pdf{ background-position: -1118px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-php{ background-position: -1144px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-png{ width: 24px; height: 24px; background: url("../Images/Icons/imageicon.svg") no-repeat top left;}
+.tx-download-explorer .file:hover .filetype-png{ width: 24px; height: 24px; background: url("../Images/Icons/imageicon-white.svg") no-repeat top left;}
+.tx-download-explorer .filetype-pps{ background-position: -1196px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-ppt{ background-position: -1222px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-psd{ width: 24px; height: 24px; background: url("../Images/Icons/imageicon.svg") no-repeat top left;}
+.tx-download-explorer .file:hover .filetype-psd{ width: 24px; height: 24px; background: url("../Images/Icons/imageicon-white.svg") no-repeat top left;}
+.tx-download-explorer .filetype-py{ background-position: -1274px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-qt{ background-position: -1300px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-rar{ background-position: -1326px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-rb{ background-position: -1352px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-rtf{ background-position: -1378px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-sql{ background-position: -1404px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-svg{ width: 24px; height: 24px; background: url("../Images/Icons/imageicon.svg") no-repeat top left;}
+.tx-download-explorer .file:hover .filetype-svg{ width: 24px; height: 24px; background: url("../Images/Icons/imageicon-white.svg") no-repeat top left;}
+.tx-download-explorer .filetype-tga{ background-position: -1430px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-tgz{ background-position: -1456px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-tiff{ background-position: -1482px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-txt{ background-position: -1508px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-wav{ background-position: -1534px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-xls{ background-position: -1560px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-xlsx{ background-position: -1586px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-xml{ background-position: -1612px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-yml{ background-position: -1638px 0; width: 24px; height: 24px; }
+.tx-download-explorer .filetype-zip{ background-position: -1664px 0; width: 24px; height: 24px; }
+
+

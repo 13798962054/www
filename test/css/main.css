@@ -1,0 +1,25 @@
+#dict{
+	top: 400px;
+	width: 100%;
+	height: 2000px;
+	overflow:hidden;
+}
+#dict iframe{
+	border: 0;
+	left: -20px; 
+	top: -150px; 
+	position: relative;
+}
+
+select{
+	height: 40px;
+}
+
+input{
+	height: 34px;
+}
+
+#word{
+	width: 380px:;
+	margin: 30px auto 10px;
+}

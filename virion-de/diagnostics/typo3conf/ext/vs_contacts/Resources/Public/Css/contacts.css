@@ -1,0 +1,407 @@
+/* Fix um svg korrekt darzustellen */
+#id257 .col-12 {
+    padding: 0;
+}
+
+/* Fix für grauen Hintergrund direkt nach header */
+@media (max-width: 767px) {
+    #id257 .content .container-wrap.grey,
+    #id18 .content .container-wrap.grey {
+        margin: 29px 20px 50px;
+    }
+}
+
+.tx-vs-contacts {
+    padding:0 0 80px 0;
+}
+
+a {
+    color: #702283;
+}
+
+.position {
+    margin-bottom: 5px;
+    display: block;
+}
+
+div.box{
+    display:none;
+}
+
+.international {
+    background-image:url("../Images/worldmap.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 30px;
+    min-height: 700px;
+    max-width: 98% !important;
+}
+.international .topElementContainer .topElement {
+    background-image: none;
+    padding: 0 0 0 0;
+    transform: translateX(-30px);
+    -ms-flex: 0 0 calc(41.666667% + 60px);
+    flex: 0 0 calc(41.666667% + 60px);
+    max-width: calc(41.666667% + 60px);
+}
+@media (max-width: 991px) {
+    .international .topElementContainer .topElement {
+        padding: 34px 10px 0;
+        background: transparent;
+        -webkit-clip-path: none;
+        clip-path: none;
+        transform: none;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.international .topElementContainer .topElement .contact-header {
+    padding: 34px 40px 0;
+    background-image: url("../Images/topelement.png");
+    height: 150px;
+}
+
+.international option #country-2,
+.international option #country-3,
+.international option #country-4,
+.international option #country-5{
+    display: none;
+}
+
+.international .contact-content {
+    margin-top: 0;
+    padding:40px 40px;
+    background: rgba(255,255,255,.95);
+}
+.contact-content .contact-item {
+    margin-bottom:40px;
+}
+.contact-content .contact-item:last-child {
+    margin-bottom:0;
+}
+.contact-content .teaser {
+    margin: 0 0 15px;
+}
+
+.contact-content label {
+    width: 320px;
+    max-width: 100%;
+}
+
+.contact-content select {
+    width: 320px;
+    max-width: 100%;
+    height: 45px;
+    padding: 0 20px 0 20px;
+    border: 1px solid #702283;
+    background: transparent;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    margin-bottom: 25px;
+}
+.contact-content label {
+    position: relative;
+}
+.contact-content label:after {
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: 23px;
+    border: solid transparent;
+    border-bottom-color: #702283;
+    border-width: 7px;
+    border-bottom-width: 6px;
+    pointer-events: none;
+    transform: rotate(180deg);
+    top: 29%;
+}
+.contact-content .image-wrap{
+    margin-bottom:40px;
+
+}
+.contact-content a{
+    color: #702283;
+}
+.contact-content p {
+    margin-bottom: 5px;
+}
+.contactblock {
+    margin-bottom: 35px;
+}
+.container.national {
+    padding-top: 30px;
+}
+.national svg {
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+    margin-bottom: -23px;
+}
+.national g {
+    opacity: 0;
+}
+
+.national-de:lang(en),
+.national-en:lang(de){
+    display: none;
+}
+
+.national .content-block {
+    top: 85px;
+}
+
+.hidden {display: none}
+.popover {
+    max-width: 310px;
+    width: 310px;
+    height: 305px;
+    filter: drop-shadow(-2px 5px 4px rgba(0, 0, 0, 0.4));
+    border: 0;
+    top:0;
+    z-index: 9;
+    background: transparent;
+    font-size: 16px;
+    font-family: Dax-Light, sans-serif;
+}
+
+@media (max-width: 640px) and (orientation:landscape) {
+    .popover {
+        position: absolute !important;
+        top: 60% !important;
+        left: 0 !important;
+        transform: none !important;
+        max-width: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+}
+@media (max-width: 480px) {
+    .popover {
+        position: absolute !important;
+        top: 60% !important;
+        left: 0 !important;
+        transform: none !important;
+        max-width: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+}
+@media (max-width: 320px) {
+    .popover {
+        position: fixed !important;
+        top: 53% !important;
+        max-width: 95%;
+        left: 2% !important;
+        width: 95%;
+        border-radius: 0;
+    }
+}
+
+.popover-heading {
+    padding: 0;
+    border-radius: 0;
+    border-bottom: 0;
+    background-color: transparent;
+    height: 175px;
+    overflow: hidden;
+    position: relative;
+}
+.popover-header {
+    background: transparent;
+    padding: 0;
+    border: 0;
+}
+.close {
+    width: 21px;
+    height: 21px;
+    background: #702283;
+    display: block;
+    border-radius: 21px;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    /* padding: 10px; */
+    line-height: 19px;
+    z-index: 9999;
+    text-align: center;
+    font-weight: 300;
+    opacity: 1;
+    color: #fff;
+    cursor:pointer;
+}
+.close:focus, .close:hover {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+#imagemap {
+    position: relative;
+    max-width: 481px;
+    height: 652px;
+    margin: 0;
+
+    @media (max-width: 1199px){
+        height: 570px;
+    }
+    @media (max-width: 991px){
+        height: 505px;
+    }
+    @media (max-width: 767px) {
+        height: 460px;
+    }
+    @media (max-width: 575px)
+        height: 310px;
+    }
+    @media (max-width: 480px){
+        height: 400px;
+    }
+    @media (max-width: 320px){
+        height: 365px;
+    }
+}
+
+#imagemap figure {
+    height: 652px;
+
+    @media (max-width: 1199px){
+        height: 570px;
+    }
+    @media (max-width: 991px){
+        height: 505px;
+    }
+    @media (max-width: 767px){
+        height: 460p;
+    }
+    @media (max-width: 575px){
+        height: 310px;
+    }
+    @media (max-width: 480px) {
+        height: 400px;
+    }
+    @media (max-width: 320px){
+        height: 365px;
+    }
+}
+
+.national img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+img.national {
+    width: 481px;
+}
+
+.popover-body {
+    width:90.4%;
+    background-color:#DFDFE0;
+    margin-top: -1px;
+    padding: 30px 30px;
+    margin-left: 9.6%;
+}
+.flex{
+    display: flex;
+    height: 50vh;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.popover-heading{
+    -webkit-clip-path: polygon(0% 0%, 90.4% 0, 100% 0, 90.4% 30%, 90.4% 100%, 0 100%);
+    clip-path: polygon(0% 0%, 90.4% 0, 100% 0, 90.4% 30%, 90.4% 100%, 0 100%);
+}
+.popover-body h3{
+    font-size: 16px;
+    font-family: 'Dax-Medium', serif;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: normal;
+}
+.bs-popover-right {
+    background-color: transparent;
+    border: 0;
+}
+.contact-map .popover-heading {
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, 9.6% 100%, 9.6% 30%, 0 0);
+    clip-path: polygon(100% 0%, 100% 100%, 9.6% 100%, 9.6% 30%, 0 0);
+}
+@media (max-width: 640px) and (orientation:landscape) {
+    .contact-map .popover-heading {
+        padding: 0;
+        border-radius: 0;
+        border-bottom: 0;
+        background-color: transparent;
+        height: 175px;
+        overflow: hidden;
+        position: relative;
+        -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 0, 100% 30%, 100% 100%, 0 100%);
+        clip-path: polygon(0% 0%, 100% 0, 100% 0, 100% 30%, 100% 100%, 0 100%);
+    }
+}
+@media (max-width: 480px) {
+    .contact-map .popover-heading {
+        padding: 0;
+        border-radius: 0;
+        border-bottom: 0;
+        background-color: transparent;
+        height: 175px;
+        overflow: hidden;
+        position: relative;
+        -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 0, 100% 30%, 100% 100%, 0 100%);
+        clip-path: polygon(0% 0%, 100% 0, 100% 0, 100% 30%, 100% 100%, 0 100%);
+    }
+}
+
+.bs-popover-auto[x-placement^=right]{
+    background-color: transparent;
+    border:0;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .popover-heading{
+        clip-path: none;
+
+    }
+    .popover-heading:before {
+        content: '';
+        position: absolute;
+        top: 160px;
+        right: 20px;
+        z-index: 99;
+        border-top: 160px solid #fff;
+        border-left: 92px solid transparent;
+    }
+}
+
+_:-ms-lang(x), .popover-heading {
+    clip-path: none;
+    width:90.4%;
+    margin-left: 9.6%;
+    overflow: visible;
+}
+
+_:-ms-lang(x), .popover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:30px;
+    z-index: 99;
+    border-top: 50px solid #dfdfe0;
+    border-left: 30px solid transparent;
+    border-right:0;
+}

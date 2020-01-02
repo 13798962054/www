@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>常用PC端banner3-Swiper</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/pcbanner3.css">
+
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><img src="images/slide01.jpg"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/slide02.jpg"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/slide03.jpg"></a></div>
+        </div>
+        
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    </div>
+    
+<div class="swiper-pagination"></div>
+
+    <script src="js/swiper.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container',{
+		autoplay:3000,
+		loop:true,
+		loopedSlides:3,
+		spaceBetween:20,
+		centeredSlides:true,
+		slidesPerView : 'auto',
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+		});
+    </script>
+</body>
+</html>

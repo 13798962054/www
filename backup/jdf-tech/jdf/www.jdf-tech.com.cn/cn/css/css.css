@@ -1,0 +1,103 @@
+@charset "utf-8";
+body {
+    margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 22px;
+	color: #000000;
+}
+
+a{color:#333; text-decoration:none;}
+a:hover{ color:#FF6600;}
+
+#nav a {color: #FFFFFF;text-decoration: none; font-size:12px;}
+#nav a:hover {color: #FF0000;}
+
+.zi {
+	color: #FFFFFF;
+}
+.zi2 {
+
+	font-weight: bold;
+	color: #000000;
+}
+.zi3 {
+	color: #FF0000;
+}
+.zi4 {
+	color: #0066CC;
+}
+.zi5 {
+
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.sub_title{ padding-left:20px;  font-weight:bold; height:34px; line-height:34px; background:url(../image/19.jpg) repeat-x left top;}
+.sub_title span{FONT-SIZE: 10px; COLOR: #333333;font-weight:normal; font-family:Geneva, Arial, Helvetica, sans-serif;}
+.more{ color:#666; text-align:right; padding-right:5px; font-family:Geneva, Arial, Helvetica, sans-serif; font-weight:normal; font-size:12px;}
+
+.subnav_title{ padding-left:15px;  font-weight:bold; height:35px; line-height:35px; background:url(../image/8.jpg) repeat-x left top;}
+.subnav_title span{FONT-SIZE: 10px; COLOR: #333333;font-weight:normal; font-family:Geneva, Arial, Helvetica, sans-serif;}
+
+.subnav_title_01{ padding-left:15px;  font-weight:bold; height:30px; line-height:30px; background:url(../image/17.jpg) repeat-x left top;}
+.subnav_title_01 span{FONT-SIZE: 10px; COLOR: #333333;font-weight:normal; font-family:Geneva, Arial, Helvetica, sans-serif;}
+.subnav_title_02{ padding-left:15px;  font-weight:bold; height:34px; line-height:34px; background:url(../image/19.jpg) repeat-x left top;}
+.subnav_title_02 span{FONT-SIZE: 10px; COLOR: #333333;font-weight:normal; font-family:Geneva, Arial, Helvetica, sans-serif;}
+
+
+
+.con{ font-size:12px; line-height:190%; padding:20px 5px 20px 20px;}
+
+ul,li{ margin:0px; padding:0px; list-style:none;}
+
+.sub_nav li{background:url(../image/9.jpg) repeat-x left top; padding:6px 0 3px 20px; color:#fff;}
+.sub_nav a{ color:#fff;}
+.sub_nav a:hover{ color:#FF9933;}
+
+.job_t{ color:#003366; font-weight:bold;}
+
+.pages {font-family:Verdana;font-size:12px; line-height:normal; margin:10px 0 10px;}
+.pages ul{list-style:none;margin:0px;padding:0px;}
+.pages li {float:left;margin:0 5px 0 0;display:block;}
+.pages li a {float:left;color:#999;padding:1px 5px 2px 5px;border:1px solid #ddd;text-decoration:none;}
+.pages li a:hover {color:#000;background:#f2f2f2;border:1px solid #999;}
+.pages li.current {color:#000;border:1px solid #f2f2f2;padding:1px 5px 2px;background:#f2f2f2;}
+.pages li.nolink {color:#CCC;border:1px solid #F0F0F0;padding:1px 5px 2px;}
+.p_clear{ clear:both;}
+
+.new_dis{ padding:10px 20px 20px 20px;}
+.new_t{text-align:center;font-weight:bold; font-size:14px;border-bottom:1px dotted #999; padding:5px 0 5px 0px;}
+.new_d{ text-align:right; line-height:22px; color:#999; padding-bottom:5px;}
+.new_c{ line-height:180%;}
+.back{ text-align:right;}
+
+.pro_nav h2{background:url(../image/9.jpg) repeat-x left top; padding:6px 0 3px 20px; color:#fff; margin:0px; font-size:12px; cursor:pointer;}
+.pro_nav h2 a{ color:#fff;}
+.pro_nav h2 a:hover{ color:#FF9933;}
+.pro_nav ul{ display:none;}
+.pro_nav li{ border-bottom:1px dotted #ccc; padding:3px 0 2px 15px; width:90%;}
+.pro_nav li a{ color:#666;}
+.pro_nav li a.cur{color:#FF9933;}
+.pro_nav li a:hover{ color:#FF9933;}
+
+#pro{ width:95%; margin:10px auto; font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;}
+#pro h2{padding:0px; margin:0px; font-size:12px; line-height:1.6em; color:#1a2172; background:url(../image/bullet_grid.gif) no-repeat left center; padding-left:25px; margin-top:10px;}
+#pro p{FONT-SIZE:12px; color:#000; line-height:200%;font-family:Arial, Helvetica, sans-serif; padding:0px; margin:0px; padding:10px 0 30px 0;}
+#pro .line{MARGIN-TOP: 10px; margin-bottom:8px; BACKGROUND: url(../image/dot.png) repeat-x;HEIGHT: 1px;}
+#pro .back{ text-align:right; padding-right:10px; font-size:11px; }
+#pro .back a{color:#0066CC;}
+
+a.lang { color:#333; font-family:Arial, Helvetica, sans-serif; text-decoration:none;}
+a.lang:hover{ color:#333; font-family:Arial, Helvetica, sans-serif;}
+
+.input_m {BORDER: #b0b0b0 1px solid; FONT-SIZE: 12px;  COLOR: #333;  HEIGHT: 16px}
+.font_8{ color:#FF0000;}
+.bian {BORDER: #c9c9c9 1px solid;}
+.input_s {BORDER: #e4e4e4 1px double;  HEIGHT: 16px; BACKGROUND-COLOR: #e4e4e4}
+
+
+
