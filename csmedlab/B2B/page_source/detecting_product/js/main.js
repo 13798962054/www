@@ -69,3 +69,11 @@ document.onkeydown = function(e) {
 
     }
 }
+
+
+// 监听左侧导航栏点击事件，改变右侧iframe框架链接内容
+function changeIframe(i, j){
+    document.getElementsByTagName('iframe')[0].src = "page_source/detecting_product/products/" + i + "/" + j + ".php"
+}
+
+// VUE

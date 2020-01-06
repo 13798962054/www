@@ -1,0 +1,151 @@
+body{
+    font-family: "Microsoft YaHei", SIMHEI, sans-serif;
+}
+.current-position{
+    width: 70%;
+    height: 20px;
+    padding: 25px 0 5px;
+    border-bottom: #2B91ED 2px solid;
+    text-align: right;
+    font-size: 12px;
+}
+
+.current-position-normal{
+    color: #585858;
+}
+
+.current-position-link{
+    color: #232323;
+    font-weight: 700;
+}
+
+.current-position-link a{
+    color: #232323;
+    text-decoration: none;
+}
+
+.current-position-link a:hover{
+    color: #2B91ED;
+}
+
+
+#good{
+
+    width: 900px;
+    list-style-type: none;
+}
+
+#good-name{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 40px;
+    height: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#good-type{
+    text-align: center;
+}
+
+#good-info .info-list{
+    height: 30px;
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 2px #2B91ED solid;
+}
+
+#good-info .info-list li{
+    display: block;
+    float: left;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+#good-info .info-list li:hover{
+    color: #2B91ED;
+}
+
+
+#good-info .info-list .active{
+    color: #fff;
+    background-color: #2B91ED;
+    cursor: auto;
+}
+
+#good-info .info-list .active:hover{
+    color: #fff;
+}
+
+.info-content{
+    border: 1px solid #f1f1f1;
+}
+
+/*标题*/
+h1{
+    font-size: 15px;
+    padding: 15px 0;
+    color: #535353;
+}
+
+
+/*标题*/
+h1{
+    font-size: 15px;
+    padding: 15px 0;
+    color: #535353;
+}
+
+/*产品信息表单*/
+.product-content-item table{
+    border: 1px solid #dee2e6;
+    margin: 0 auto 14px;
+    color: #212529;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    text-align: left;
+}
+.product-content-item table thead{
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.product-content-item table tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.product-content-item table thead tr th{
+    border-bottom-width: 2px;
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    border: 1px solid #dee2e6;
+    padding: 10.5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.product-content-item table th, .product-content-item table td{
+    padding: 15px;
+}
+.product-content-item table tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.product-content-item table tbody td{
+    border: 1px solid #dee2e6;
+}
+.product-content-item table tbody tr:nth-of-type(odd){
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.product-content-item table tbody tr:nth-of-type(odd):hover{
+    background-color: rgba(0, 0, 0, 0.075);
+}
+.product-content-item table tbody tr:hover{
+    background-color: rgba(0, 0, 0, 0.075);
+}
+

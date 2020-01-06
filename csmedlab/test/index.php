@@ -19,12 +19,18 @@ $select_db = $mysqli->select_db($mysql_conf['db']);
 if (!$select_db) {
     die("could not connect to the db:\n" .  $mysqli->error);
 }
+
 $sql = "select * from user;";
 $res = $mysqli->query($sql);
 if (!$res) {
     die("sql error:\n" . $mysqli->error);
 }
 while ($row = $res->fetch_assoc()) {
+    echo("<br />1、<br />");
+    print_r($row);
+    echo("<br />2、<br />");
+    echo($row);
+    echo("<br />3、<br />");
     var_dump($row);
 }
 
