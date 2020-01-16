@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<div id="div1"><h2>test ajax load</h2></div>
+	<button>ajax load test</button>
+
+</body>
+
+<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#div1").load("result.txt", function(responseTxt, statusTxt, xhr){
+				if(statusTxt == "success")
+					alert("外部内容加载成功")
+				if(statusTxt == "error")
+					alert("errot" + xhr.status + ":" + xhr.statusText)
+			})
+		})
+	})
+</script>
+
+</html>

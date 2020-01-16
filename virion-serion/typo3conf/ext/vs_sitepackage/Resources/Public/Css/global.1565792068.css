@@ -320,7 +320,9 @@ body > .overlay {
 
 .content {
   /* Container */
-  /* Radial bg gradient */ }
+  /* Radial bg gradient */ 
+
+}
   .content *, .content *:focus {
     outline: none !important; }
   .content img {
@@ -1868,7 +1870,7 @@ button[type="submit"] {
       /*opacity: 1; */
     }
     .pageswitch .item .item-content {
-      width: 500px; }
+      width: 600px; }
       @media (max-width: 1199px) {
         .pageswitch .item .item-content {
           width: 375px; } }

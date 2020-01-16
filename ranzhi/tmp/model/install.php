@@ -1,7 +1,7 @@
 <?php
 global $app;
 helper::cd($app->getBasePath());
-helper::import('E:\owen\software\wamp\Apache24\htdocs\ranzhi\app\sys\install\model.php');
+helper::import('/www/wwwroot/ranzhi/app/sys/install/model.php');
 helper::cd();
 class extinstallModel extends installModel 
 {

@@ -1,0 +1,8 @@
+ canvas{
+ 	display: block;
+ 	 width: 1863px;
+ 	 height: 660px;
+ 	position: static;
+ 	margin: auto;
+ }
+ .block-audio{display:none}

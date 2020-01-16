@@ -18,11 +18,11 @@ var vm = new Vue({
     },
     data: {
         currentIndex: [0, 0, false],
-        currentTitle: "抗原（63） > 巨细胞病毒（1） > ",
+        currentTitle: "赛润抗原（63） > 巨细胞病毒（1） > ",
         currentPageTitle: "巨细胞病毒",
-        content_title: ["抗原", "人源化单抗", "原辅料"],
+        content_title: ["赛润抗原", "赛润抗体", "赛润原辅料"],
         // Nav的所有字段
-        Nav1: ['抗原（63）', "人源化单抗（16）", "原辅料"],
+        Nav1: ['赛润抗原（63）', "赛润抗体（16）", "赛润原辅料"],
         Nav2: [
             ["巨细胞病毒", "弓形虫", "风疹病毒", "单纯疱疹病毒（1型）", "单纯疱疹病毒（2型）", "肺炎支原体", "肺炎衣原体", "呼吸道合胞病毒", "人腺病毒", "副流感病毒", "寨卡病毒", "嗜肺军团菌", "百日咳杆菌", "腮腺炎病毒", "柯萨奇病毒", "埃可病毒", "肠道病毒", "细小病毒B19", "EB病毒", "白色念珠菌", "幽门螺旋杆菌", "麻疹病毒", "轮状病毒", "水痘-带状疱疹病毒", "流产嗜性衣原体", "沙眼衣原体", "耶尔森氏菌", "空肠弯曲杆菌", "布鲁氏杆菌", "伯氏疏螺旋体", "双曲钩端螺旋体", "细粒棘球绦虫", "森林脑炎病毒", "基孔肯雅病毒"],
             ["抗巨细胞病毒", "抗弓形虫", "抗单纯疱疹病毒", "抗水痘带状疱疹病毒", "抗风疹病毒", "抗麻疹病毒", "抗腮腺炎病毒", "抗EB病毒", "抗肺炎衣原体", "抗肺炎支原体", "抗寨卡病毒", "抗登革热病毒"],
@@ -367,9 +367,35 @@ var vm = new Vue({
             // 2原辅料
             [
                 // 磁珠
-                [],
+                [
+                    ["<p style='width: 80%;'>SERION磁珠是专门为全自动检测（如CLIA）开发的新产品。</p>"+
+                        "<p style='width: 80%;'>SERION磁珠包括含胺基和羧基两种不同官能团的产品。磁珠直径约是3μm，可提供较大的相对表面积，有利于与生物分子偶联，并且具有超顺磁性，可实现磁珠快速分离。常规偶联剂和SERION偶联剂均可活化磁珠上的氨基或羧基，提高生物分子的偶联效率。</p>"+
+                        "<p style='width: 80%;'>产品特点及优势：</p>"+
+                        "<p style='text-indent: 2em;'>（1）磁珠表面含功能基团；（2）可实现磁珠快速分离；（3）较大的相对表面积；（4）适用于自动化检测。</p>"
+                    ],
+                    [""],
+                    ["031MP-C", "MagSERION carboxy beads", "羧基", "2.40 μm – 3.70 μm", "100 mg/mL", "100 mg/管"],
+                    ["031MPSS", "MagSERION amine beads", "胺基", "2.40 μm – 3.70 μm", "100 mg/mL", "100 mg/管"]
+                ],
                 // 牛血清白蛋白
-                []
+                [
+                    ["<p style='width: 80%'>牛血清白蛋白（BSA）是一种球形血清蛋白，分子量约为66.5 kDa。由于其高度稳定性和对许多生物反应不产生干扰，被广泛应用于诊断产品。</p>"],
+                    [""],
+                    ["BSA-0010SG", "Bovine Serum Albumin，Standard Grade", "标准级", "10 g"],
+                    ["BSA-0100SG", "Bovine Serum Albumin，Standard Grade", "标准级", "100 g"],
+                    ["BSA-1000SG", "Bovine Serum Albumin，Standard Grade", "标准级", "1000 g"],
+                    ["BSA-0010PF", "Bovine Serum Albumin，Protease Free", "无蛋白酶", "10 g"],
+                    ["BSA-0100PF", "Bovine Serum Albumin，Protease Free", "无蛋白酶", "100 g"],
+                    ["BSA-1000PF", "Bovine Serum Albumin，Protease Free", "无蛋白酶", "1000 g"],
+                    ["BSA-0010FF", "Bovine Serum Albumin，Fatty Acid Free", "无脂肪酸", "10 g"],
+                    ["BSA-0100FF", "Bovine Serum Albumin，Fatty Acid Free", "无脂肪酸", "100 g"],
+                    ["BSA-1000FF", "Bovine Serum Albumin，Fatty Acid Free", "无脂肪酸", "1000 g"],
+                    ["BSA-0010SH", "Bovine Serum Albumin，Sulfhydryl Blocked", "巯基封闭", "10 g"],
+                    ["BSA-0100SH", "Bovine Serum Albumin，Sulfhydryl Blocked", "巯基封闭", "100 g"],
+                    ["BSA-1000SH", "Bovine Serum Albumin，Sulfhydryl Blocked", "巯基封闭", "1000 g"],
+                    ["BSA-001SL", "Bovine Serum Albumin，30 % Solution，with 0.1% Sodium Azide", "溶液", "1 L"],
+                    ["BSA-010SL", "Bovine Serum Albumin，30 % Solution，with 0.1% Sodium Azide", "溶液", "10 L"]
+                ]
             ]
         ]
     }

@@ -51,3 +51,19 @@ $app->loadModule();
 
 /* Flush the buffer. */
 echo helper::removeUTF8Bom(ob_get_clean());
+
+?>
+
+<script>
+	// document.getElementsByClassName("copyright")[0].style.display="none"
+	// document.querySelector("#startMenu > li:nth-child(5)").style.display="none"
+	
+</script>
+
+
+
+
+
+
+
+

@@ -127,7 +127,7 @@
 
 <div id="news">
 
-    <div class="time">2019.11.26</div>
+    <div class="time">2019.11.11</div>
     <div class="content">
         <div class="content-title" style="font-size: 24px">
             维润赛润生物技术（深圳）有限公司总经理宁紫妍女士<br />应邀参加2019年中德企业合作洽谈峰会
