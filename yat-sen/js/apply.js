@@ -16,6 +16,9 @@ var vm = new Vue({
         }
       }
       
+    },
+    deleteMember: function(index){
+      this.$set(this.member, index, 0)
     }
   }
 

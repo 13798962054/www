@@ -338,14 +338,17 @@ input[type="text"], input[type="password"], input[type="date"]{
 
 /*上传图片*/
 .img-file-div{ 
+	float: left;
 	width: 99px; 
 	height: 99px; 
 	background-image: url("../uploads/add1.jpg"); 
 	background-size: 99px 99px;
 }
 
+
 .img-file-div:hover{
 	opacity: 0.8;
+	cursor: pointer;
 }
 		
 .img-file{ 
@@ -353,4 +356,49 @@ input[type="text"], input[type="password"], input[type="date"]{
 	height: 99px; 
 	float: left; 
 	opacity: 0;
+}
+
+.img-file:hover{
+	cursor: pointer;
+}
+
+/*删除成员图标*/
+.deleteMember{
+	margin-left: 330px;;
+}
+
+.deleteMember:hover{
+	color: #b62c2c;
+	cursor: pointer;
+}
+
+/*标记*/
+mark{
+	background: initial;
+	color: #b62c2c;
+}
+
+/*添加成员按钮*/
+.addMemberButton{
+	display: inline-block;
+    background: #b62c2c;
+    font-size: 14px;
+    line-height: 40px;
+    width: 130px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    overflow: hidden;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.Validform_wrong {
+    color: #e62d31;
+}
+
+.Validform_checktip {
+    line-height: 22px;
+    display: inline-block;
+    vertical-align: middle;
 }

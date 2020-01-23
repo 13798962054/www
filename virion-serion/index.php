@@ -12,19 +12,13 @@ include "footer-header/header.php"
     <meta name="generator" content="TYPO3 CMS">
 
     <meta name="robots" content="index,follow">
-    <link rel="stylesheet" type="text/css" href="typo3temp/assets/css/53cdba1e4f.1534860335.css" media="all">
+
+
     <link rel="stylesheet" type="text/css"
-          href="typo3conf/ext/vs_sitepackage/Resources/Public/Css/download_explorer.1537432455.css" media="all">
+          href="/css/bootstrap-custom.min.1511774818.css" media="all">
     <link rel="stylesheet" type="text/css"
-          href="typo3conf/ext/vs_sitepackage/Resources/Public/Css/fileicons.1535375465.css" media="all">
-    <link rel="stylesheet" type="text/css"
-          href="typo3conf/ext/vs_sitepackage/Resources/Public/Css/bootstrap-custom.min.1511774818.css" media="all">
-    <link rel="stylesheet" type="text/css"
-          href="typo3conf/ext/vs_sitepackage/Resources/Public/Css/flexslider.1534930471.css" media="all">
-    <link rel="stylesheet" type="text/css" href="typo3conf/ext/vs_products/Resources/Public/Css/products.1572356635.css"
-          media="all">
-    <link rel="stylesheet" type="text/css"
-          href="typo3conf/ext/vs_sitepackage/Resources/Public/Css/global.1565792068.css" media="all">
+          href="/css/global.1565792068.css" media="all">
+
 
     <link rel="stylesheet" href="css/jquery.pagination.css"/>
     <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>

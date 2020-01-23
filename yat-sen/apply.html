@@ -7,6 +7,7 @@
 <title>中山大学报名系统</title>
 <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
 <link rel="stylesheet" type="text/css" href="css/apply.css">
+<link rel="stylesheet" type="text/css" href="css/font-awsome.min.css">
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/vue2.6.10.js"></script>
@@ -278,6 +279,7 @@
 								</div>
 							</form>
 							<iframe style="display:none" name="member-img-iframe1" id="member-img-iframe1"></iframe>
+							
 				        </dd>
 				    </dl>
 				</div>
@@ -318,6 +320,7 @@
 								</div>
 							</form>
 							<iframe style="display:none" name="member-img-iframe2" id="member-img-iframe2"></iframe>
+							<span @click="deleteMember(1)" class="deleteMember" title="删除"><i class="fa fa-trash-alt"></i></span>
 				        </dd>
 				    </dl>
 				</div>
@@ -359,6 +362,7 @@
 								</div>
 							</form>
 							<iframe style="display:none" name="member-img-iframe3" id="member-img-iframe3"></iframe>
+							<span @click="deleteMember(2)" class="deleteMember" title="删除"><i class="fa fa-trash-alt"></i></span>
 				        </dd>
 				    </dl>
 				</div>
@@ -400,6 +404,7 @@
 								</div>
 							</form>
 							<iframe style="display:none" name="member-img-iframe4" id="member-img-iframe4"></iframe>
+							<span @click="deleteMember(3)" class="deleteMember" title="删除"><i class="fa fa-trash-alt"></i></span>
 				        </dd>
 				    </dl>
 				</div>
@@ -441,6 +446,7 @@
 								</div>
 							</form>
 							<iframe style="display:none" name="member-img-iframe5" id="member-img-iframe5"></iframe>
+							<span @click="deleteMember(4)" class="deleteMember" title="删除"><i class="fa fa-trash-alt"></i></span>
 				        </dd>
 				    </dl>
 				</div>
@@ -481,7 +487,72 @@
 				<dl>
 			        <dt></dt>
 			        <dd>
-			        	<button @click="addMember">添加新成员</button>
+			        	<button @click="addMefmber" class="addMemberButton">添加新成员</button>
+			        </dd>
+			    </dl>
+			</div>
+
+			<div class="list-content">
+				<dl>
+			        <dt><sup>*</sup>已融轮次：</dt>
+			       	<dd>
+			            <select class="select Validform_error" datatype="*" nullmsg="请选择已融轮次" name="already_finance">
+			            	<option value="" selected="selected">请选择已融轮次</option>
+			            	<option value="1">尚未获投</option>
+			            	<option value="2">种子轮</option>
+			            	<option value="3">天使轮</option>
+			            	<option value="4">Pre-A轮</option>
+			            	<option value="5">A轮</option>
+			            	<option value="6">A+轮</option>
+			            	<option value="7">Pre-B轮</option>
+			            	<option value="8">B轮</option>
+			            	<option value="9">B+轮</option>
+			            	<option value="10">C轮</option>
+			            	<option value="11">C+轮</option>
+			            	<option value="12">D轮</option>
+			            	<option value="13">D+轮</option>
+			            	<option value="14">E轮</option>
+			            	<option value="15">F轮</option>
+			            	<option value="16">IPO</option>
+			            	<option value="17">已上市</option>
+			            	<option value="18">新三板</option>
+			            	<option value="19">战略投资</option>
+			            	<option value="20">已被收购</option>
+			            	<option value="21">暂不明确</option>
+			            </select>
+			            <!-- <div class="Validform_checktip Validform_wrong">请选择已融轮次</div> -->
+			        </dd>
+			    </dl>
+			</div>
+
+			<div class="list-content">
+				<dl>
+			        <dt><sup>*</sup>融资需求：</dt>
+			       	<dd>
+			            <select class="select Validform_error" id="demand-select" datatype="*" nullmsg="请选择融资需求" name="finance_need">
+			            	<option value="" selected="selected">请选择融资需求</option>
+			            	<option value="-1">不需要融资</option>
+			            	<option value="24">不明确</option>
+			            	<option value="25">种子轮</option>
+			            	<option value="26">天使轮</option>
+			            	<option value="27">Pre-A轮</option>
+			            	<option value="28">A轮</option>
+			            	<option value="29">A+轮</option>
+			            	<option value="30">Pre-B轮</option>
+			            	<option value="31">B轮</option>
+			            	<option value="32">B+轮</option>
+			            	<option value="33">C轮</option>
+			            	<option value="34">C+轮</option>
+			            	<option value="35">D轮</option>
+			            	<option value="36">D+轮</option>
+			            	<option value="37">E轮</option>
+			            	<option value="38">F轮</option>
+			            	<option value="39">IPO</option>
+			            	<option value="40">已上市</option>
+			            	<option value="41">新三板</option>
+			            	<option value="43">战略投资</option>
+			            </select>
+			            <!-- <div class="Validform_checktip Validform_wrong">请选择融资需求</div> -->
 			        </dd>
 			    </dl>
 			</div>
